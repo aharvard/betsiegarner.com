@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Betsie Garner: Bio{% endblock title %}
+{% block content %}
+
+<body>
+	<div class="site-wrapper">
+
+    <div class="site-nav">
+      <ul>
+        <li><a href="/" class="site-link">Home</a></li>
+        <li><a href="/bio" class="site-link active">Bio</a></li>
+        <li><a href="/cv" class="site-link">CV</a></li>
+      </ul>
+
+    </div>
+
+    <div class="site-head ">
+      <h1 class="site-head-name">
+        <span class="cap-letter">B</span>io
+    </div>
+
+    <div class="bio">{% include "bio.html" %}</div>
+
+  </div>
+</body>
+
+
+{% endblock content%}

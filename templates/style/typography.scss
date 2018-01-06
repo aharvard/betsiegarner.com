@@ -1,0 +1,86 @@
+// $serif: 'Playfair Display',serif;
+// $sans: 'Raleway',sans-serif;
+
+$serif: 'CenturySchoolbook', serif;
+$sans: 'CenturySchoolbook', serif;
+
+$bets-blue: #40556C;
+$bets-dark-blue: #6f757b;
+$bets-dark: #000;
+
+$ttu-purple: #4F2984;
+$ttu-gold: #FFDD00;
+
+html {
+  font-size: 16px;
+
+  @media (max-width: 790px) {
+    font-size: 15px;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 14px;
+  }
+
+}
+body {
+  font: 400 1.2rem/2.2rem $serif;
+  color: #222;
+}
+
+
+em {
+  font-style: italic;
+}
+
+.bio p {
+  margin: 2.4rem 0;
+  color: $bets-dark;
+  white-space: pre-wrap;
+}
+
+$name-size: 8rem;
+
+.site-head-name {
+  font: 900 0/6.5rem $serif;
+  font-size: $name-size;
+  text-transform: uppercase;
+  margin-left: -.05em;
+  margin-bottom: 1rem;
+  .cap-letter { font-size: 1.31*$name-size; }
+}
+
+.site-head-sub-head {
+  // font: 700 1.5rem/2.5rem $serif;
+  font: 400 2rem/2.4rem $serif;
+
+
+  @media (max-width: 500px) {
+    font: 400 1.7rem/2.4rem $serif;
+  }
+
+  @media (max-width: 370px) {
+    font: 400 1.4rem/2.4rem $serif;
+  }
+  // @media (max-width: 500px) { font: 700 1.3rem/2.1rem $serif; }
+}
+
+.site-nav-name {
+  font: 900 1.8rem/1.8rem $serif;
+  text-transform: uppercase;
+}
+
+.site-link {
+  font: 400 1.2rem/1.2rem $sans;
+  text-decoration: none;
+  color: $bets-dark;
+}
+
+.hang-quote {
+  text-indent: -0.35rem;
+}
+
+::selection {
+  background: $ttu-gold;
+  color: $ttu-purple ;
+}

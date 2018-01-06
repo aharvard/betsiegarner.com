@@ -1,0 +1,142 @@
+h2 {
+  font-family: $serif;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  margin: 0 0 1.4rem;
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+}
+.heading-cv {
+  border-bottom: 2px solid #ddd;
+}
+.section-cv {
+
+  // border: 1px solid blue;
+  margin: 5rem 0;
+}
+.section-row {
+  display: flex;
+  margin-bottom: 2.4rem;
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
+}
+.section-col {
+  flex: 1;
+  margin-right: 10px;
+  // border: 1px solid red;
+
+  &:last-child {
+    margin-right: 0;
+  }
+  p {
+
+    // border: 1px solid purple;
+    line-height: 1.7rem;
+    margin-bottom: 0.6rem;
+  }
+}
+.col-1 {
+  flex: 0;
+  flex-basis: 4rem;
+  @media (max-width: 500px) {
+    flex-basis: 0;
+  }
+}
+.col-1-wide {
+  flex-basis: 7.5rem;
+  @media (max-width: 1000px) {
+    flex-basis: 8rem;
+  }
+  @media (max-width: 500px) {
+    flex-basis: 0;
+  }
+}
+.col-2 {
+  flex: 7.3;
+  padding-right: 4rem;
+  @media (max-width: 500px) {
+    padding-right: 0;
+  }
+}
+.col-3 {
+  flex: 5;
+}
+.col-3-wide {
+  flex-basis: 3rem;
+  @media (max-width: 1000px) {
+    flex-basis: 10rem;
+  }
+  @media (max-width: 500px) {
+    flex-basis: 0rem;
+  }
+}
+.col-4 {
+  flex-basis: 34%;
+  flex-grow: 0;
+  @media (max-width: 700px) {
+    flex-basis: 45%;
+
+    //
+    &:first-child {
+      margin-top: 0;
+    }
+
+    //
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  @media (max-width: 500px) {
+
+    // flex-basis: 0;
+    margin: 1rem 0;
+  }
+}
+.wrap-row {
+  flex-wrap: wrap;
+  width: 100%;
+}
+.multi-col {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  @media (max-width: 900px) {
+    display: block;
+
+    // outline: 1px solid red;
+    column-count: 2;
+  }
+  @media (max-width: 600px) {
+    column-count: 1;
+  }
+}
+.col-item {
+  flex: 1;
+
+  // border: 1px solid green;
+  flex-basis: 8rem;
+  line-height: 1.3rem;
+  margin: 0 0 1.3rem;
+}
+.col-item-long {
+  flex-basis: 18rem;
+}
+@media (max-width: 600px) {
+  .bottom-space {
+    margin-bottom: 2rem;
+  }
+}
+#fellowships-and-rewards,
+#service-to-pub, 
+#contact {
+  .col-1-wide {
+    flex-basis: 17rem;
+    @media (max-width: 1000px) {
+      flex-basis: 9rem;
+    }
+    @media (max-width: 500px) {
+      flex-basis: 0rem;
+    }
+  }
+}
