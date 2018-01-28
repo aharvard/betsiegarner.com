@@ -2,6 +2,6 @@ _export/
 .build/
 build/
 .codekit-cache/
-
+.vscode/
 config.codekit
 config.codekit3
