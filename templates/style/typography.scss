@@ -28,6 +28,12 @@ body {
   color: #222;
 }
 
+sup {
+  top: -.25em;
+  font-size: .7em;
+  position: relative;
+  vertical-align: top;
+} 
 
 em {
   font-style: italic;
