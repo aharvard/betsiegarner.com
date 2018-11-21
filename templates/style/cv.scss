@@ -10,9 +10,10 @@ h2 {
   border-bottom: 2px solid #ddd;
 }
 .section-cv {
-
-  // border: 1px solid blue;
   margin: 5rem 0;
+  p {
+    max-width: 30em;
+  }
 }
 .section-row {
   display: flex;
@@ -30,7 +31,6 @@ h2 {
     margin-right: 0;
   }
   p {
-
     // border: 1px solid purple;
     line-height: 1.7rem;
     margin-bottom: 0.6rem;
@@ -88,7 +88,6 @@ h2 {
     }
   }
   @media (max-width: 500px) {
-
     // flex-basis: 0;
     margin: 1rem 0;
   }
@@ -128,7 +127,7 @@ h2 {
   }
 }
 #fellowships-and-rewards,
-#service-to-pub, 
+#service-to-pub,
 #contact {
   .col-1-wide {
     flex-basis: 17rem;
