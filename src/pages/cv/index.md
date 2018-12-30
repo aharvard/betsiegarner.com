@@ -484,7 +484,7 @@ departmentService:
       year: 2017-
     - title: Recruitment Volunteer at TTU Preview Day
       year: '2018'
-    - title: Recruitment Volunteer at the 54th American Legion Boys State
+    - title: Recruitment Volunteer at the 54<sup>th</sup> American Legion Boys State
       year: '2018'
     - title: Participant in the Tennessee Transfer Pathways Review
       year: '2018'
