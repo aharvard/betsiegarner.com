@@ -27,6 +27,9 @@ const CVSection = ({ gridItems, sectionHeading, status, className }) => (
                     .toString())
                 }}
               />
+              {item.subTitle && (
+                <div className="sub-title">{item.subTitle}</div>
+              )}
               {item.courses && (
                 <ul className="courses">
                   {item.courses.map(courseItem => (
@@ -34,10 +37,10 @@ const CVSection = ({ gridItems, sectionHeading, status, className }) => (
                   ))}
                 </ul>
               )}
+              {item.event && <div className="event">{item.event}</div>}
             </div>
           </>
         )}
-        {item.subTitle && <div className="sub-title">{item.subTitle}</div>}
 
         {item.organization && (
           <div className="organization">{item.organization}</div>
@@ -45,7 +48,6 @@ const CVSection = ({ gridItems, sectionHeading, status, className }) => (
 
         {item.coAuthor && <div className="co-author">{item.coAuthor}</div>}
         {item.conference && <div className="conference">{item.conference}</div>}
-        {item.event && <div className="event">{item.event}</div>}
 
         {item.institution && item.institutionLocation ? (
           <div className="institution">
