@@ -8,8 +8,8 @@ import remarkHtml from "remark-html";
 const CVSection = ({ gridItems, sectionHeading, status, className }) => (
   <section className={"cv-section " + className}>
     <h2>{sectionHeading}</h2>
-    {gridItems.map(item => (
-      <div className="entry" key={item.title}>
+    {gridItems.map((item, index) => (
+      <div className="entry" key={index}>
         {item.interest && <div className="interest">{item.interest}</div>}
 
         {item.year && <div className="year">{item.year}</div>}
@@ -32,8 +32,10 @@ const CVSection = ({ gridItems, sectionHeading, status, className }) => (
               )}
               {item.courses && (
                 <ul className="courses">
-                  {item.courses.map(courseItem => (
-                    <li className="course">{courseItem.course}</li>
+                  {item.courses.map((courseItem, index) => (
+                    <li className="course" key={index}>
+                      {courseItem.course}
+                    </li>
                   ))}
                 </ul>
               )}
@@ -110,11 +112,11 @@ CVSection.propTypes = {
       award: PropTypes.string,
       coAuthor: PropTypes.string,
       conference: PropTypes.string,
-      courses: PropTypes.arrayOf(PropTypes.string),
+      courses: PropTypes.arrayOf(PropTypes.object),
       email: PropTypes.string,
       event: PropTypes.string,
       institution: PropTypes.string,
-      interest: PropTypes.arrayOf(PropTypes.string),
+      interest: PropTypes.string,
       journal: PropTypes.string,
       journalIssue: PropTypes.string,
       location: PropTypes.string,
