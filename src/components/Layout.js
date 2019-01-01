@@ -25,6 +25,7 @@ const TemplateWrapper = ({ children }) => (
             name="description"
             content={data.site.siteMetadata.description}
           />
+          <link rel="stylesheet" href="https://use.typekit.net/fxw8qzz.css" />
           <link
             rel="apple-touch-icon-precomposed"
             sizes="57x57"
