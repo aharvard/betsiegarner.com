@@ -15,14 +15,14 @@ const Navbar = class extends React.Component {
         <Link
           className="navbar-item"
           activeClassName="navbar-item--active"
-          to="/bio/"
+          to="/bio"
         >
           Bio
         </Link>
         <Link
           className="navbar-item"
           activeClassName="navbar-item--active"
-          to="/cv/"
+          to="/cv"
         >
           CV
         </Link>
