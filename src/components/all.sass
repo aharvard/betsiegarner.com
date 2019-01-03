@@ -33,7 +33,7 @@ h1
 
 
 h2 
-  font-size: $h2Size + em
+  font-size: 1em
   letter-spacing: .05em
   font-weight: 400
 
@@ -224,6 +224,9 @@ h2
         grid-row: initial
 
   .cv-section--campus-presentations &
+    grid-template-columns: 5rem 3fr 18rem
+    > *
+      max-width: 30rem
     .institution
       grid-row: 1 / 2
       @media (max-width: #{$mobile})
