@@ -41,7 +41,7 @@ education:
   heading: Education
 interests:
   entries:
-    - interest: Research Methods
+    - interest: Qualitative Research Methods
     - interest: ' Place, Culture, and Community '
     - interest: ' Urban and Rural Sociology '
     - interest: ' Race, Class, and Gender Inequality '
@@ -272,6 +272,12 @@ conferencePresentations:
   heading: Conference Presentations
 campusPresentations:
   entries:
+    - event: Sociology and Criminal Justice Club Careers Workshop
+      institution: Tennessee Tech University
+      institutionLocation: 'Cookeville, TN'
+      quotes: true
+      title: '"Entry-Level Jobs for Careers in Sociology"'
+      year: '2019'
     - event: Wake Up Wednesday
       institution: Tennessee Tech University
       institutionLocation: 'Cookeville, TN'
@@ -339,7 +345,6 @@ teachingExperience:
   entries:
     - courses:
         - course: ' Introduction to Sociology '
-        - course: 'Introduction to Sociology Online '
         - course: 'The Violent South '
       institution: Tennessee Tech University
       institutionLocation: 'Cookeville, TN'
@@ -504,6 +509,9 @@ departmentService:
   heading: Service to the Department
 publicService:
   entries:
+    - location: 'Cookeville, TN'
+      title: tnAchieves Mentor
+      year: 2019-
     - location: 'Conyers, GA'
       title: 'Volunteer at Rockdale CASA, Inc.'
       year: 2015-
