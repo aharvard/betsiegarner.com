@@ -239,7 +239,7 @@ collections:
                         },
                         { label: Year, name: year, widget: string },
                         { label: Co-author, name: coAuthor, widget: string },
-                        { label: Status, name: status, widget: text },
+                        { label: Status, name: status, widget: markdown },
                       ],
                   },
                 ],
