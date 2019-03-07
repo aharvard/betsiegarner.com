@@ -224,7 +224,6 @@ collections:
               fields:
                 [
                   { label: Heading, name: heading, widget: string },
-                  { label: Status, name: status, widget: string },
                   {
                     label: Entries,
                     name: entries,
@@ -240,6 +239,7 @@ collections:
                         },
                         { label: Year, name: year, widget: string },
                         { label: Co-author, name: coAuthor, widget: string },
+                        { label: Status, name: status, widget: text },
                       ],
                   },
                 ],

@@ -74,7 +74,8 @@ const CVSection = ({ gridItems, sectionHeading, status, className }) => (
         )}
         {item.award && <div className="award">{item.award}</div>}
 
-        {status && <div className="status">{status}</div>}
+        {/* TODO FIX FOR CUSTOM LABEL */}
+        {item.status && <div className="status">{item.status}</div>}
 
         {item.amount && <div className="amount">{item.amount}</div>}
 

@@ -312,10 +312,10 @@ export const cvPageQuery = graphql`
             title
             quotes
             year
+            status
             coAuthor
           }
           heading
-          status
         }
         funding {
           entries {
