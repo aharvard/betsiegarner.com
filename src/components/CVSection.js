@@ -5,7 +5,7 @@ import remark from "remark";
 import recommended from "remark-preset-lint-recommended";
 import remarkHtml from "remark-html";
 
-const CVSection = ({ gridItems, sectionHeading, status, className }) => (
+const CVSection = ({ gridItems, sectionHeading, className }) => (
   <section className={"cv-section " + className}>
     <h2>{sectionHeading}</h2>
     {gridItems.map((item, index) => (
@@ -74,8 +74,18 @@ const CVSection = ({ gridItems, sectionHeading, status, className }) => (
         )}
         {item.award && <div className="award">{item.award}</div>}
 
-        {/* TODO FIX FOR CUSTOM LABEL */}
-        {item.status && <div className="status">{item.status}</div>}
+        {item.status && (
+          <div
+            className="status"
+            dangerouslySetInnerHTML={{
+              __html: (item.status = remark()
+                .use(recommended)
+                .use(remarkHtml)
+                .processSync(item.status)
+                .toString())
+            }}
+          />
+        )}
 
         {item.amount && <div className="amount">{item.amount}</div>}
 
