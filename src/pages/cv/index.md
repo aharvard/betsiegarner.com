@@ -389,6 +389,10 @@ professionalDevelopment:
   entries:
     - institution: 'Tennessee Tech University '
       institutionLocation: 'Cookeville, TN'
+      title: Camp QEP
+      year: '2018, 2019'
+    - institution: 'Tennessee Tech University '
+      institutionLocation: 'Cookeville, TN'
       subTitle: Academic Learning Community
       title: 'Inclusive Excellence '
       year: 2018-2019
@@ -396,10 +400,6 @@ professionalDevelopment:
       institutionLocation: 'Colorado Springs, CO'
       subTitle: ''
       title: Faculty Development Fellowship
-      year: '2018'
-    - institution: 'Tennessee Tech University '
-      institutionLocation: 'Cookeville, TN'
-      title: Camp QEP
       year: '2018'
     - institution: 'Tennessee Tech University '
       institutionLocation: 'Cookeville, TN'
