@@ -163,13 +163,13 @@ conferencePresentations:
       location: 'New York, NY'
       quotes: true
       title: >-
-        "Conditional Hospitality as Lived Religion: LGBTQ Marginalization in a
-        Southern Community"
+        “Conditional Hospitality as Lived Religion: LGBTQ Marginalization in a
+        Southern Community”
       year: '2019'
     - conference: Southern Sociological Society Annual Meeting
       location: 'Atlanta, GA'
       quotes: true
-      title: '“All Are Welcome? Southern Hospitality and the Politics of Belonging” '
+      title: “All Are Welcome? Southern Hospitality and the Politics of Belonging”
       year: '2019'
     - conference: Southern Studies Conference
       location: 'Montgomery, AL'
@@ -282,11 +282,23 @@ conferencePresentations:
   heading: Conference Presentations
 campusPresentations:
   entries:
+    - event: IMPACT Racism and Discrimination Series
+      institution: Tennessee Tech University
+      institutionLocation: 'Cookeville, TN'
+      quotes: true
+      title: “Simulating Residential Segregation”
+      year: '2019'
+    - event: College of Arts and Sciences Student Workshop Series
+      institution: Tennessee Tech University
+      institutionLocation: 'Cookeville, TN'
+      quotes: true
+      title: “Build Your Resume and Learn to Network”
+      year: '2019'
     - event: Sociology and Criminal Justice Club Careers Workshop
       institution: Tennessee Tech University
       institutionLocation: 'Cookeville, TN'
       quotes: true
-      title: '"Entry-Level Jobs for Careers in Sociology"'
+      title: “Entry-Level Jobs for Careers in Sociology”
       year: '2019'
     - event: Wake Up Wednesday
       institution: Tennessee Tech University
