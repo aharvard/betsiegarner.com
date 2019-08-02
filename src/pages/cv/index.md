@@ -451,7 +451,7 @@ proService:
     - title: Reviewer for Rowman & Littlefield
       year: '2019'
     - title: Reviewer for _Qualitative Sociology_
-      year: '2016'
+      year: 2016-2019
     - title: Reviewer for _Gender & Society_
       year: 2015-2016
     - title: >-
