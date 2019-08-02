@@ -372,7 +372,7 @@ teachingExperience:
       institution: Tennessee Tech University
       institutionLocation: 'Cookeville, TN'
       semester: Fall 2019
-      title: Assitant Professor of Sociology
+      title: Assistant Professor of Sociology
     - courses:
         - course: Introduction to Sociology Online
       institution: Tennessee Tech University
