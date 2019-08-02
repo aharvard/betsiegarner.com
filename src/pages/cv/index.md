@@ -99,7 +99,7 @@ papersInProgress:
       title: >-
         “Warm and Friendly Churches: Southern Hospitality, Christian
         Hospitality, and the Institutional Maintenance of Local Congregations”
-      year: '2018'
+      year: '2019'
   heading: Papers In Progress
 funding:
   entries:
