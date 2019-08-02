@@ -94,13 +94,6 @@ papersInProgress:
       title: |
         “All Are Welcome? Southern Hospitality and the Politics of Belonging”
       year: '2019'
-    - coAuthor: Co-authored with Sarah Zelner
-      quotes: true
-      status: In preparation
-      title: >-
-        “Urban Progressivism and Southern Hospitality: How Comparison Cases
-        Reveal Shared Processes of Community Attachment”
-      year: '2018'
     - quotes: true
       status: In preparation
       title: >-
