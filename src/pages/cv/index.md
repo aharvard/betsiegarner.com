@@ -504,7 +504,7 @@ publicService:
       year: 2019-
     - location: 'Conyers, GA'
       title: 'Volunteer at Rockdale CASA, Inc.'
-      year: 2015-
+      year: 2015-2019
     - location: 'Conyers, GA'
       title: 'Volunteer at Rockdale Emergency Relief Smart Lunch, Smart Kid Program'
       year: '2015, 2016, 2017'
