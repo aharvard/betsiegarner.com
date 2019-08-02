@@ -17,13 +17,13 @@ contact:
         Cookeville, TN 38505
       email: bgarner@tntech.edu
   heading: Contact
-employment:
+academicAppointment:
   entries:
     - institution: "Tennessee Tech University "
       institutionLocation: "Cookeville, TN"
       title: Instructor of Sociology
       year: 2017-
-  heading: Employment
+  heading: Academic Appointment
 education:
   entries:
     - institution: "University of Pennsylvania "

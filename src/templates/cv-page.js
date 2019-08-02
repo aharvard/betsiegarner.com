@@ -8,7 +8,7 @@ import Layout from "../components/Layout";
 export const CVPageTemplate = ({
   title,
   contact,
-  employment,
+  academicAppointment,
   education,
   interests,
   publications,
@@ -35,9 +35,9 @@ export const CVPageTemplate = ({
       sectionHeading={contact.heading}
     />
     <CVSection
-      className="cv-section--employment"
-      gridItems={employment.entries}
-      sectionHeading={employment.heading}
+      className="cv-section--academic-appointment"
+      gridItems={academicAppointment.entries}
+      sectionHeading={academicAppointment.heading}
     />
     <CVSection
       className="cv-section--education"
@@ -134,7 +134,7 @@ CVPageTemplate.propTypes = {
     entries: PropTypes.array,
     heading: PropTypes.string
   }),
-  employment: PropTypes.shape({
+  academicAppointment: PropTypes.shape({
     entries: PropTypes.array,
     heading: PropTypes.string
   }),
@@ -222,7 +222,7 @@ const CVPage = ({ data }) => {
       <CVPageTemplate
         title={frontmatter.title}
         contact={frontmatter.contact}
-        employment={frontmatter.employment}
+        academicAppointment={frontmatter.academicAppointment}
         education={frontmatter.education}
         interests={frontmatter.interests}
         publications={frontmatter.publications}
@@ -271,7 +271,7 @@ export const cvPageQuery = graphql`
           }
           heading
         }
-        employment {
+        academicAppointment {
           entries {
             title
             year

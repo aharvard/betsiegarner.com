@@ -111,8 +111,8 @@ collections:
                 ],
             }
           - {
-              label: Employment,
-              name: employment,
+              label: Academic Appointment,
+              name: academicAppointment,
               widget: object,
               fields:
                 [
