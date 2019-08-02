@@ -24,8 +24,7 @@ export const CVPageTemplate = ({
   proService,
   universityService,
   departmentService,
-  publicService,
-  references
+  publicService
 }) => (
   <div className="cv-page">
     <h1>{title}</h1>
@@ -119,11 +118,6 @@ export const CVPageTemplate = ({
       className="cv-section--public-service"
       gridItems={publicService.entries}
       sectionHeading={publicService.heading}
-    />
-    <CVSection
-      className="cv-section--references"
-      gridItems={references.entries}
-      sectionHeading={references.heading}
     />
   </div>
 );
@@ -239,7 +233,6 @@ const CVPage = ({ data }) => {
         universityService={frontmatter.universityService}
         departmentService={frontmatter.departmentService}
         publicService={frontmatter.publicService}
-        references={frontmatter.references}
       />
     </Layout>
   );
@@ -417,13 +410,6 @@ export const cvPageQuery = graphql`
             title
             year
             location
-          }
-          heading
-        }
-        references {
-          entries {
-            name
-            email
           }
           heading
         }
