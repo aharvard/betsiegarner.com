@@ -90,10 +90,10 @@ publications:
 papersInProgress:
   entries:
     - quotes: true
-      status: Under Review at <br> _Southern Cultures_
+      status: Under review at <br> _Study the South_
       title: |
         “All Are Welcome? Southern Hospitality and the Politics of Belonging”
-      year: '2018'
+      year: '2019'
     - coAuthor: Co-authored with Sarah Zelner
       quotes: true
       status: In preparation
