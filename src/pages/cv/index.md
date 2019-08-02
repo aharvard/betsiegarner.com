@@ -159,6 +159,13 @@ awards:
   heading: Honors and Awards
 conferencePresentations:
   entries:
+    - conference: American Sociological Association Annual Meeting
+      location: 'New York, NY'
+      quotes: true
+      title: >-
+        "Conditional Hospitality as Lived Religion: LGBTQ Marginalization in a
+        Southern Community"
+      year: '2019'
     - conference: Southern Sociological Society Annual Meeting
       location: 'Atlanta, GA'
       quotes: true
