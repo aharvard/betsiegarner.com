@@ -111,8 +111,8 @@ collections:
                 ],
             }
           - {
-              label: Academic Appointment,
-              name: academicAppointment,
+              label: Academic Appointments,
+              name: academicAppointments,
               widget: object,
               fields:
                 [

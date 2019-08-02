@@ -18,9 +18,9 @@ const CVPagePreview = ({ entry }) => {
     <CVPageTemplate
       title={entry.getIn(["data", "title"])}
       contact={{ heading: heading("contact"), entries: entries("contact") }}
-      academicAppointment={{
-        heading: heading("academicAppointment"),
-        entries: entries("academicAppointment")
+      academicAppointments={{
+        heading: heading("academicAppointments"),
+        entries: entries("academicAppointments")
       }}
       education={{
         heading: heading("education"),
