@@ -368,73 +368,21 @@ teachingExperience:
     - courses:
         - course: Introduction to Sociology
         - course: Introduction to Sociology Online
+        - course: Sociology of Media and Popular Culture
+        - course: The Violent South
         - course: Places That Matter
       institution: Tennessee Tech University
       institutionLocation: 'Cookeville, TN'
-      semester: Fall 2019
-      title: Assistant Professor of Sociology
-    - courses:
-        - course: Introduction to Sociology Online
-      institution: Tennessee Tech University
-      institutionLocation: 'Cookeville, TN'
-      semester: Summer 2019
-      title: Instructor
-    - courses:
-        - course: ' Introduction to Sociology '
-        - course: 'The Violent South '
-      institution: Tennessee Tech University
-      institutionLocation: 'Cookeville, TN'
-      semester: Spring 2019
-      title: Instructor
-    - courses:
-        - course: 'Introduction to Sociology '
-        - course: Introduction to Sociology Online
-      institution: 'Tennessee Tech University '
-      institutionLocation: 'Cookeville, TN'
-      semester: Fall 2018
-      title: Instructor
-    - courses:
-        - course: Introduction to Sociology Online
-      institution: 'Tennessee Tech University '
-      institutionLocation: 'Cookeville, TN'
-      semester: Summer 2018
-      title: Instructor
-    - courses:
-        - course: ' Introduction to Sociology '
-        - course: ' Sociology of Media and Popular Culture '
-      institution: 'Tennessee Tech University '
-      institutionLocation: 'Cookeville, TN'
-      semester: Spring 2018
-      title: Instructor
-    - courses:
-        - course: Introduction to Sociology
-      institution: 'Tennessee Tech University '
-      institutionLocation: 'Cookeville, TN'
-      semester: Fall 2017
-      title: Instructor
-    - courses:
-        - course: Introduction to Sociology
-      institution: 'University of Pennsylvania '
-      institutionLocation: 'Philadelphia, PA'
-      semester: Spring 2014
-      title: Teaching Assistant and Recitation Instructor
-    - courses:
-        - course: The Family
-      institution: 'University of Pennsylvania '
-      institutionLocation: 'Philadelphia, PA'
-      semester: Fall 2013
-      title: Teaching Assistant and Recitation Instructor
-    - courses:
-        - course: Sociology of Media and Popular Culture
-      institution: 'University of Pennsylvania '
-      institutionLocation: 'Philadelphia, PA'
-      semester: Spring 2013
-      title: Teaching Assistant and Recitation Instructor
+      semester: 2017-
+      title: Instructor of Record
     - courses:
         - course: Asian Americans in Contemporary Society
-      institution: 'University of Pennsylvania '
+        - course: Sociology of Media and Popular Culture
+        - course: Introduction to Sociology
+        - course: The Family
+      institution: University of Pennsylvania
       institutionLocation: 'Philadelphia, PA'
-      semester: Fall 2012
+      semester: 2012-2014
       title: Teaching Assistant and Recitation Instructor
   heading: Teaching Experience
 professionalDevelopment:
