@@ -103,6 +103,10 @@ papersInProgress:
   heading: Papers In Progress
 funding:
   entries:
+    - amount: '$2,000'
+      institution: Tennessee Tech University
+      title: 'QEP EDGE Creative Inquiry Curriculum Grant '
+      year: '2019'
     - amount: $300
       institution: Tennessee Tech University
       title: College of Arts and Sciences Faculty Development Fund
