@@ -366,6 +366,20 @@ campusPresentations:
 teachingExperience:
   entries:
     - courses:
+        - course: Introduction to Sociology
+        - course: Introduction to Sociology Online
+        - course: Places That Matter
+      institution: Tennessee Tech University
+      institutionLocation: 'Cookeville, TN'
+      semester: Fall 2019
+      title: Assitant Professor of Sociology
+    - courses:
+        - course: Introduction to Sociology Online
+      institution: Tennessee Tech University
+      institutionLocation: 'Cookeville, TN'
+      semester: Summer 2019
+      title: Instructor
+    - courses:
         - course: ' Introduction to Sociology '
         - course: 'The Violent South '
       institution: Tennessee Tech University
