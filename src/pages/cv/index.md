@@ -474,6 +474,8 @@ universityService:
   heading: Service to the University
 departmentService:
   entries:
+    - title: Member of the Department Faculty Onboarding Committee
+      year: 2019-
     - title: >-
         Chapter Representative for the Epsilon chapter of Alpha Kappa Delta
         International Sociology Honor Society
