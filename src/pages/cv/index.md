@@ -465,10 +465,10 @@ proService:
   heading: Service to the Profession
 universityService:
   entries:
+    - title: Facilitator for the Inclusive Excellence Academic Learning Community
+      year: 2019-
     - title: Volunteer for the International Friends Host Family Program
       year: 2018-
-    - title: Facilitator for the Inclusive Excellence Academic Learning Community
-      year: 2019-2020
     - title: Reviewer for _Journal of Creative Inquiry_
       year: '2018'
   heading: Service to the University
