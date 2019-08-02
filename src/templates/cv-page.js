@@ -313,7 +313,6 @@ export const cvPageQuery = graphql`
             quotes
             year
             status
-            coAuthor
           }
           heading
         }
