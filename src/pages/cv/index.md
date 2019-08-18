@@ -105,7 +105,7 @@ funding:
   entries:
     - amount: '$2,000'
       institution: Tennessee Tech University
-      title: 'QEP EDGE Creative Inquiry Curriculum Grant '
+      title: 'QEP Creative Inquiry Curriculum Grant '
       year: '2019'
     - amount: $300
       institution: Tennessee Tech University
