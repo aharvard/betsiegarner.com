@@ -59,21 +59,15 @@ h1 {
   }
 }
 
-h2 {
-  font-size: 1em;
-  letter-spacing: 0.05em;
-  font-weight: 400;
-}
-
 p {
   margin: 0 0 2.4rem;
   white-space: pre-wrap;
   line-height: 1.8;
   max-width: 70ch;
   @media (max-width: #{$mobile}) {
-    line-height: 4vw;
     line-height: 1.5rem;
     line-height: calc(1vw + 1.5rem);
+    font-size: 99%;
   }
 }
 
