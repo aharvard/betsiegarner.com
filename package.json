@@ -5,12 +5,10 @@
   "author": "Andrew Harvard",
   "scripts": {
     "serve": "live-server --port=2000 --open=./public",
-    
-    "build-sass": "npm-sass ./main.scss > ./main.css",
-    "minify-css": "uglifycss ./main.css > ./public/main.min.css",
+    "build-sass": "npm-sass ./src/main.scss > ./src/main.css",
+    "minify-css": "uglifycss ./src/main.css > ./public/main.min.css",
     "watch-sass": "chokidar \"**/*.scss\" -c 'npm run build-sass && npm run minify-css'",
-    
-    "start": "npm run watch-sass | npm run serve",
+    "dev": "npm run watch-sass | npm run serve",
     "build": "npm run build-sass && npm run minify-css"
   },
   "devDependencies": {

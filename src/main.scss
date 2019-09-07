@@ -1,0 +1,89 @@
+$black: #333;
+$gray: #ddd;
+$h1Size: 3;
+$h2Size: 1.25;
+$lightSchoolColor: #fd0;
+$darkSchoolColor: #4f2984;
+$mobile: 37em;
+$tablet: 56em;
+
+//------------------
+//-- Global
+//------------------
+
+::selection {
+  background: $lightSchoolColor;
+  color: $darkSchoolColor;
+}
+
+html {
+  font-size: 100%;
+  font-size: calc(0.5vw + 12px);
+}
+
+body {
+  color: $black;
+  display: block;
+  font-size: 1.15em;
+  font-family: "SchoolBook", serif;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 60rem;
+}
+
+.site-main {
+  margin: 0;
+  padding: 10rem 2.5rem 1rem;
+
+  @media (max-width: #{$mobile}) {
+    padding: 1rem;
+  }
+}
+
+h1 {
+  font-size: $h1Size + em;
+  margin: 0 0 1em;
+  text-transform: uppercase;
+  font-weight: 400;
+  display: inline-block;
+
+  span {
+    display: inline-block;
+
+    &::first-letter {
+      font-size: 1.5em;
+    }
+  }
+  @media (max-width: #{$mobile}) {
+    font-size: 8vw;
+  }
+}
+
+h2 {
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  font-weight: 400;
+}
+
+p {
+  margin: 0 0 2.4rem;
+  white-space: pre-wrap;
+  line-height: 1.8;
+  max-width: 70ch;
+  @media (max-width: #{$mobile}) {
+    line-height: 4vw;
+    line-height: 1.5rem;
+    line-height: calc(1vw + 1.5rem);
+  }
+}
+
+.visually-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
