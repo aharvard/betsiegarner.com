@@ -64,6 +64,7 @@ p {
   white-space: pre-wrap;
   line-height: 1.8;
   max-width: 70ch;
+  color: red;
   @media (max-width: #{$mobile}) {
     line-height: 1.5rem;
     line-height: calc(1vw + 1.5rem);
