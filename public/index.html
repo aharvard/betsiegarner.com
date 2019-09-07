@@ -1,24 +1,4 @@
-import { graphql, StaticQuery } from "gatsby";
-import React from "react";
-import Helmet from "react-helmet";
-import Navbar from "../components/Navbar";
-import "./all.sass";
 
-const TemplateWrapper = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query HeadingQuery {
-        site {
-          siteMetadata {
-            title
-            description
-          }
-        }
-      }
-    `}
-    render={data => (
-      <>
-        <Helmet>
           <html lang="en" />
           <title>{data.site.siteMetadata.title}</title>
           <meta
@@ -120,12 +100,3 @@ const TemplateWrapper = ({ children }) => (
           <meta property="og:type" content="website" />
           <meta property="og:url" content="/" />
           <meta property="og:image" content="/img/og-image.jpg" />
-        </Helmet>
-        <Navbar />
-        <main className="site-main">{children}</main>
-      </>
-    )}
-  />
-);
-
-export default TemplateWrapper;

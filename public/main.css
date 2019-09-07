@@ -1,0 +1,100 @@
+$black: '#333';
+$gray: '#ddd';
+$h1Size: 5;
+$h2Size: 1.25;
+$lightSchoolColor: '#fd0';
+$darkSchoolColor: '#4F2984';
+$mobile: '37em';
+$tablet: '56em';
+
+//------------------ 
+//-- Global
+//------------------ 
+
+::selection {
+ background: $lightSchoolColor;
+ color: $darkSchoolColor;
+}
+
+html{
+  font-size: 100%;
+}
+
+body{ 
+  color: $black;
+  font-size: 1.15em;
+  font-family: 'SchoolBook', serif;
+  @media (max-width: #{$mobile}) {
+    // font-size: 1em
+  }
+}
+
+h1 {
+  font-size: $h1Size + em;
+  margin: 0 0 1rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+
+h2 {
+  font-size: 1em;
+  letter-spacing: .05em;
+  font-weight: 400;
+}
+
+
+.site-main {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 1rem 2.5rem;
+  @media (max-width: #{$mobile}) {
+    padding: 1rem;
+  }
+}
+
+.navbar {
+  max-width: 64rem;
+  margin: 0 auto 1rem;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: flex-end;
+  @media (max-width: #{$mobile}) {
+    padding: 1rem;
+  }
+}
+
+.navbar-item {
+  margin-left: 1rem;
+  flex: 0 0 auto;
+  border-bottom: 1px solid transparent;
+  text-decoration: none;
+  color: $black;
+
+  &:hover, &:focus {
+    border-color: $black;
+  }
+
+  &.navbar-item--active {
+    border-color: $black;
+  }
+}
+
+//------------------ 
+//-- Pages
+//------------------ 
+   
+.bio-page {
+  max-width: 47rem;
+
+  h1::first-letter{
+    font-size: 1.5em;
+  }
+  
+  p {
+    margin: 0 0 2.4rem;
+    white-space: pre-wrap;
+    line-height: 1.8;
+  }
+
+}
