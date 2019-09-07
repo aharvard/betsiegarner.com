@@ -4,13 +4,15 @@
   "version": "3.0.0",
   "author": "Andrew Harvard",
   "scripts": {
-    
+    "serve": "live-server --port=2000 --open=./public",
+    "build-sass": "npm-sass ./main.scss > ./public/main.css",
+    "watch-sass": "chokidar \"**/*.scss\" -c 'npm run build-sass'",
+    "start": "npm run watch-sass | npm run serve",
+    "build": "build-sass"
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions"
-  ],
   "devDependencies": {
-    
+    "chokidar-cli": "^2.0.0",
+    "live-server": "^1.2.1",
+    "npm-sass": "^2.3.0"
   }
 }
