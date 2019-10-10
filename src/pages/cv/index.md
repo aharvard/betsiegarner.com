@@ -104,6 +104,10 @@ papersInProgress:
   heading: Papers In Progress
 funding:
   entries:
+    - amount: $250
+      institution: Alpha Kappa Delta
+      title: Chapter Representative Research Travel Grant
+      year: '2019'
     - amount: $400
       institution: Alpha Kappa Delta
       title: Student Member Research Travel Grant <br>On behalf of Presley Alford
