@@ -464,9 +464,7 @@ proService:
         Mentor to Incoming Sociology Graduate Students at the University of
         Pennsylvania
       year: 2013-2016
-    - title: >-
-        Communications Committee Member for the Work and Family Researchers
-        Network
+    - title: Member of the WFRN Communications Committee
       year: 2013-2014
   heading: Service to the Profession
 universityService:
