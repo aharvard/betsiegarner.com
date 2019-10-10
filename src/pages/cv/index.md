@@ -493,8 +493,8 @@ departmentService:
         Chapter Representative for the Epsilon chapter of Alpha Kappa Delta
         International Sociology Honor Society
       year: 2018-
-    - title: Recruitment Volunteer at TTU Preview Day
-      year: '2018'
+    - title: Recruitment Volunteer at Tennessee Tech Preview Day
+      year: '2018, 2019'
     - title: Recruitment Volunteer at the 54<sup>th</sup> American Legion Boys State
       year: '2018'
     - title: Participant in the Tennessee Transfer Pathways Review
