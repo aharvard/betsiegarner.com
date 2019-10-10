@@ -483,6 +483,10 @@ departmentService:
         Member and Equity Representative of the Assistant Professor of Sociology
         (criminology/criminal justice, generalist) Search Committee
       year: 2019-
+    - title: >-
+        Member and Equity Representative of the Assistant Professor of Sociology
+        (criminology/criminal justice, policing) Search Committee
+      year: 2019-
     - title: Member of the Department Faculty Onboarding Committee
       year: 2019-
     - title: >-
