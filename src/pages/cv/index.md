@@ -160,6 +160,15 @@ awards:
   heading: Honors and Awards
 conferencePresentations:
   entries:
+    - conference: >-
+        International Society for the Scholarship of Teaching and Learning
+        Annual Conference
+      location: 'Atlanta, GA'
+      quotes: true
+      title: >-
+        “Marching to a Different Beat: Voices of Social Change from a Community
+        of Practice on Diversity and Inclusion”
+      year: '2019'
     - conference: American Sociological Association Annual Meeting
       location: 'New York, NY'
       quotes: true
