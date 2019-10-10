@@ -450,7 +450,7 @@ media:
   heading: Media Appearances
 proService:
   entries:
-    - title: MSSA Undergraduate Student Paper Competition Committee
+    - title: Member of the MSSA Undergraduate Student Paper Competition Committee
       year: '2019'
     - title: Reviewer for W. W. Norton & Company
       year: '2019'
