@@ -168,6 +168,7 @@ conferencePresentations:
       title: >-
         “Marching to a Different Beat: Voices of Social Change from a Community
         of Practice on Diversity and Inclusion”
+      conferenceDetails: 'Co-presented with Ashley Akenson, Andrea Arce-Trigatti, and Jacob Kelley'
       year: '2019'
     - conference: American Sociological Association Annual Meeting
       location: 'New York, NY'

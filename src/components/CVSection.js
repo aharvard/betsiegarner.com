@@ -50,6 +50,7 @@ const CVSection = ({ gridItems, sectionHeading, className }) => (
 
         {item.coAuthor && <div className="co-author">{item.coAuthor}</div>}
         {item.conference && <div className="conference">{item.conference}</div>}
+        {item.conferenceDetails && <div className="conference-details">{item.conferenceDetails}</div>}
 
         {item.institution && item.institutionLocation ? (
           <div className="institution">
@@ -123,6 +124,7 @@ CVSection.propTypes = {
       award: PropTypes.string,
       coAuthor: PropTypes.string,
       conference: PropTypes.string,
+      conferenceDetails: PropTypes.string,
       courses: PropTypes.arrayOf(PropTypes.object),
       email: PropTypes.string,
       event: PropTypes.string,

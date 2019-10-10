@@ -1,0 +1,75 @@
+::selection {
+  background: #fd0;
+  color: #4f2984; }
+
+html {
+  font-size: 100%;
+  font-size: calc(0.5vw + 0.75em); }
+
+body {
+  color: #333;
+  display: block;
+  font-size: 1.15em;
+  font-family: "SchoolBook", serif;
+  padding: 0;
+  padding: 1rem 2.5rem;
+  margin: 0 auto;
+  max-width: 60rem; }
+  @media (max-width: 37em) {
+    body {
+      padding: 1rem; } }
+
+header {
+  padding-top: 1rem; }
+  header a {
+    float: right; }
+
+.site-main {
+  margin: 0;
+  padding-top: 10rem; }
+  @media (max-width: 37em) {
+    .site-main {
+      padding: 2.5rem 1rem; } }
+
+h1 {
+  font-size: 3em;
+  margin: 0 0 1em;
+  text-transform: uppercase;
+  font-weight: 400;
+  display: inline-block; }
+  h1 span {
+    display: inline-block; }
+    h1 span::first-letter {
+      font-size: 1.5em; }
+  @media (max-width: 37em) {
+    h1 {
+      font-size: 8vw; } }
+
+p {
+  margin: 0 0 2.4rem;
+  white-space: pre-wrap;
+  line-height: 1.8;
+  max-width: 70ch; }
+  @media (max-width: 37em) {
+    p {
+      line-height: 1.5rem;
+      line-height: calc(1vw + 1.5rem);
+      font-size: 95%; } }
+
+a {
+  border-bottom: 1px solid transparent;
+  text-decoration: none;
+  color: #333;
+  transition: all 250ms ease; }
+  a:hover, a:focus {
+    border-color: #333; }
+
+.visually-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute; }

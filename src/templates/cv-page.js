@@ -331,6 +331,7 @@ export const cvPageQuery = graphql`
             quotes
             year
             conference
+            conferenceDetails
             location
           }
           heading

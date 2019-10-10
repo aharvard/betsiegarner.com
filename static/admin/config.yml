@@ -304,6 +304,7 @@ collections:
                         { label: Conference, name: conference, widget: string },
                         { label: Location, name: location, widget: string },
                         { label: Title, name: title, widget: text },
+                        { label: Conference Details, name: conferenceDetails, widget: text },
                         {
                           label: Quoted Title?,
                           name: quotes,
