@@ -369,6 +369,7 @@ teachingExperience:
     - courses:
         - course: Introduction to Sociology
         - course: Introduction to Sociology Online
+        - course: Introduction to Women and Gender Studies
         - course: Sociology of Media and Popular Culture
         - course: The Violent South
         - course: Places That Matter
