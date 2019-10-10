@@ -104,6 +104,10 @@ papersInProgress:
   heading: Papers In Progress
 funding:
   entries:
+    - amount: $400
+      institution: Alpha Kappa Delta
+      title: Student Member Research Travel Grant <br>On behalf of Presley Alfred
+      year: '2019'
     - amount: $725
       institution: Tennessee Tech Univerisity
       title: CITL Funding
