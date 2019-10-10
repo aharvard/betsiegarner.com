@@ -466,7 +466,9 @@ proService:
   heading: Service to the Profession
 universityService:
   entries:
-    - title: Women and Gender Studies Curriculum Coordinating Committee
+    - title: Member of the Online Education Advisory Committee
+      year: 2019-
+    - title: Member of the Women and Gender Studies Curriculum Coordinating Committee
       year: 2019-
     - title: Facilitator for the Inclusive Excellence Academic Learning Community
       year: 2019-
