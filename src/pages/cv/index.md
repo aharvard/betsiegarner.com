@@ -160,15 +160,22 @@ awards:
   heading: Honors and Awards
 conferencePresentations:
   entries:
+    - conference: Mid-South Sociological Association Annual Conference
+      location: 'Jackson, MS'
+      quotes: true
+      title: >-
+        “Conditional Hospitality as Lived Religion: LGBTQ Marginalization in a
+        Southern Community”
+      year: '2019'
     - conference: >-
         International Society for the Scholarship of Teaching and Learning
         Annual Conference
+      conferenceDetails: 'Co-presented with Ashley Akenson, Andrea Arce-Trigatti, and Jacob Kelley'
       location: 'Atlanta, GA'
       quotes: true
       title: >-
         “Marching to a Different Beat: Voices of Social Change from a Community
         of Practice on Diversity and Inclusion”
-      conferenceDetails: 'Co-presented with Ashley Akenson, Andrea Arce-Trigatti, and Jacob Kelley'
       year: '2019'
     - conference: American Sociological Association Annual Meeting
       location: 'New York, NY'
