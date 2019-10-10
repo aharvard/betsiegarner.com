@@ -466,6 +466,8 @@ proService:
   heading: Service to the Profession
 universityService:
   entries:
+    - title: Women and Gender Studies Curriculum Coordinating Comittee
+      year: 2019-
     - title: Facilitator for the Inclusive Excellence Academic Learning Community
       year: 2019-
     - title: Volunteer for the International Friends Host Family Program
