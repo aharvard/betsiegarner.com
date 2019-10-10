@@ -449,6 +449,8 @@ media:
   heading: Media Appearances
 proService:
   entries:
+    - title: Reviewer for W. W. Norton & Company
+      year: '2019'
     - title: Reviewer for Rowman & Littlefield
       year: '2019'
     - title: Reviewer for _Qualitative Sociology_
