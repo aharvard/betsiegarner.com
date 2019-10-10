@@ -104,6 +104,10 @@ papersInProgress:
   heading: Papers In Progress
 funding:
   entries:
+    - amount: $725
+      institution: Tennessee Tech Univerisity
+      title: CITL Funding
+      year: '2019'
     - amount: '$2,000'
       institution: Tennessee Tech University
       title: 'QEP Creative Inquiry Curriculum Grant '
