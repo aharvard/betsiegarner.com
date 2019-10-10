@@ -106,7 +106,7 @@ funding:
   entries:
     - amount: $400
       institution: Alpha Kappa Delta
-      title: Student Member Research Travel Grant <br>On behalf of Presley Alfred
+      title: Student Member Research Travel Grant <br>On behalf of Presley Alford
       year: '2019'
     - amount: $725
       institution: Tennessee Tech Univerisity
