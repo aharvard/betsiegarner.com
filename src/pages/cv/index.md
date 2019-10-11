@@ -481,20 +481,21 @@ proService:
   entries:
     - title: Member of the MSSA Undergraduate Student Paper Competition Committee
       year: '2019'
-    - title: Reviewer for W. W. Norton & Company
-      year: '2019'
-    - title: Reviewer for Rowman & Littlefield
-      year: '2019'
-    - title: Reviewer for _Qualitative Sociology_
-      year: 2016-2019
-    - title: Reviewer for _Gender & Society_
-      year: 2015-2016
     - title: >-
         Mentor to Incoming Sociology Graduate Students at the University of
         Pennsylvania
       year: 2013-2016
     - title: Member of the WFRN Communications Committee
       year: 2013-2014
+    - title: |-
+        Reviewer for W. W. Norton & Company
+
+        Reviewer for Rowman & Littlefield
+
+        Reviewer for _Qualitative Sociology_
+
+        Reviewer for _Gender & Society_
+      year: ad hoc
   heading: Service to the Profession
 universityService:
   entries:
