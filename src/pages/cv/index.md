@@ -487,14 +487,9 @@ proService:
       year: 2013-2016
     - title: Member of the WFRN Communications Committee
       year: 2013-2014
-    - title: |-
-        Reviewer for W. W. Norton & Company
-
-        Reviewer for Rowman & Littlefield
-
-        Reviewer for _Qualitative Sociology_
-
-        Reviewer for _Gender & Society_
+    - title: >-
+        Reviewer for _Gender & Society_, _Qualitative Sociology_, Rowman &
+        Littlefield, and W. W. Norton & Company
       year: ad hoc
   heading: Service to the Profession
 universityService:
