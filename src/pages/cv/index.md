@@ -46,7 +46,7 @@ education:
   heading: Education
 interests:
   entries:
-    - interest: Qualitative Research Methods
+    - interest: Sociological Research Methods
     - interest: ' Place, Culture, and Community '
     - interest: ' Urban and Rural Sociology '
     - interest: ' Race, Class, and Gender Inequality '
