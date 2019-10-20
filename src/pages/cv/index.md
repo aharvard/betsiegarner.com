@@ -312,6 +312,12 @@ conferencePresentations:
   heading: Conference Presentations
 campusPresentations:
   entries:
+    - event: Guest lecture for Nicole Henniger
+      institution: Tennessee Tech University
+      institutionLocation: 'Cookeville, TN'
+      quotes: true
+      title: '"Interviewing as a Social Science Research Method"'
+      year: '2019'
     - event: IMPACT Racism and Discrimination Series
       institution: Tennessee Tech University
       institutionLocation: 'Cookeville, TN'
