@@ -55,6 +55,12 @@ interests:
   heading: Research and Teaching Interests
 publications:
   entries:
+    - journal: Study the South
+      journalIssue: forthcomming
+      quotes: true
+      title: |
+        “All Are Welcome? Southern Hospitality and the Politics of Belonging”
+      year: '2019'
     - journal: ' Sociology Compass '
       journalIssue: '12(6): e12589'
       quotes: true
@@ -90,11 +96,6 @@ publications:
   heading: Publications
 papersInProgress:
   entries:
-    - quotes: true
-      status: Under review at <br> _Study the South_
-      title: |
-        “All Are Welcome? Southern Hospitality and the Politics of Belonging”
-      year: '2019'
     - quotes: true
       status: In preparation
       title: >-
