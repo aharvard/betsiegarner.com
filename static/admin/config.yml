@@ -209,7 +209,7 @@ collections:
                         {
                           label: Journal Issue,
                           name: journalIssue,
-                          widget: string,
+                          widget: text,
                         },
                         { label: Co-author, name: coAuthor, widget: string },
                         { label: Award, name: award, widget: text },
