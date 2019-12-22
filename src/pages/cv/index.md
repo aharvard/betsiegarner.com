@@ -56,7 +56,7 @@ interests:
 publications:
   entries:
     - journal: Study the South
-      journalIssue: forthcoming
+      journalIssue: December 20th
       quotes: true
       title: |
         “All Are Welcome? Southern Hospitality and the Politics of Belonging”
