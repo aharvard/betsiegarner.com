@@ -55,8 +55,9 @@ interests:
   heading: Research and Teaching Interests
 publications:
   entries:
-    - journal: Study the South
-      journalIssue: December 20th
+    - award: ''
+      journal: Study the South
+      journalIssue: December 20 <sup>th</sup>
       quotes: true
       title: |
         “All Are Welcome? Southern Hospitality and the Politics of Belonging”
