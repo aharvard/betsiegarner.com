@@ -70,7 +70,10 @@ const CVSection = ({ gridItems, sectionHeading, className }) => (
         {item.journal && (
           <div className="journal">
             <div className="journal-name">{item.journal}</div>
-            <div className="journal-issue">{item.journalIssue}</div>
+            {/* <div className="journal-issue">{item.journalIssue}</div> */}
+            
+            <div className="journal-issue" dangerouslySetInnerHTML={{
+                  __html: item.journalIssue}}></div>
           </div>
         )}
         {item.award && <div className="award">{item.award}</div>}
