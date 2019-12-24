@@ -12,8 +12,10 @@
     </style>
   </head>
   <body>
-    <nav>
-      {{ collections.all | eleventyNavigation | eleventyNavigationToHtml({
+    <header>
+      <a href="/">Betsie Garner</a>
+      <nav>
+        {{ collections.all | eleventyNavigation | eleventyNavigationToHtml({
         listClass: "nav__list",
         listItemClass: "nav__list-item",
         anchorClass: "nav__link",
@@ -21,13 +23,12 @@
         activeAnchorClass: "nav__link--active",
         activeKey: eleventyNavigation.key
       }) | safe }}
-    </nav>
-
+      </nav>
+    </header>
     <main>
-      <h1>
-        {{ title }}
-      </h1>
-      {{ content | safe }}
+      {% block main %}
+        {{ content | safe }}
+      {% endblock %}
     </main>
   </body>
 </html>

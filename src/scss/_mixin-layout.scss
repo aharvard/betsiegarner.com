@@ -1,0 +1,9 @@
+@mixin site-width {
+    max-width: $site-width;
+    margin: 0 auto;
+    padding: 1rem 2.5rem;
+
+    @media (max-width: #{$mobile}) {
+        padding: 1rem;
+    }
+}

@@ -14,10 +14,5 @@ body {
 }
 
 main {
-    max-width: 64rem;
-    margin: 0 auto;
-    padding: 1rem 2.5rem;
-    @media (max-width: #{$mobile}) {
-        padding: 1rem;
-    }
+    @include site-width;
 }

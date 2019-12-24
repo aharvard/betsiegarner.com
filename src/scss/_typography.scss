@@ -5,18 +5,14 @@ h4,
 h5,
 h6 {
     font-family: "Century Schoolbook Bold";
+    font-size: 2rem;
+    margin-bottom: 1em;
 }
 
 h1 {
-    font-size: 8rem;
+    font-size: 4rem;
     margin: 0 0 1rem;
     text-transform: uppercase;
-}
-
-h2 {
-    font-size: 1rem;
-    letter-spacing: 0.05em;
-    font-weight: 400;
 }
 
 p {
@@ -25,5 +21,5 @@ p {
 }
 
 p + p {
-    margin-top: 2.4rem;
+    margin-top: 1em;
 }
