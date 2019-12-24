@@ -1,32 +1,19 @@
+// SETTINGS
 @import "variables";
+
+// TOOLS
+// @import "mixin-text-styles";
+
+// GENERIC
 @import "reset";
 
-html {
-    font-family: "Century Schoolbook Roman", cursive;
-    color: $gray;
-}
+// ELEMENTS
+@import "elements";
+@import "typography";
 
-main {
-    max-width: 64rem;
-    margin: 0 auto;
-    outline: 1px solid red;
-}
+// OBJECTS & COMPONENTS
+// @import "obj-layout";
+@import "obj-cv-section";
+@import "obj-site-nav";
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Century Schoolbook Bold";
-    font-size: 10rem;
-}
-
-p {
-    white-space: pre-wrap;
-    line-height: 1.8;
-}
-
-p + p {
-    margin-top: 2.4rem;
-}
+// UTILITIES

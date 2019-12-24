@@ -1,0 +1,23 @@
+::selection {
+    background: $lightSchoolColor;
+    color: $darkSchoolColor;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    color: $black;
+    font-size: 1.15em;
+    font-family: "Century Schoolbook Roman", cursive;
+}
+
+main {
+    max-width: 64rem;
+    margin: 0 auto;
+    padding: 1rem 2.5rem;
+    @media (max-width: #{$mobile}) {
+        padding: 1rem;
+    }
+}
