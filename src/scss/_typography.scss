@@ -11,15 +11,20 @@ h6 {
 
 h1 {
     font-size: 4rem;
-    margin: 0 0 1rem;
+    margin-bottom: 1em;
     text-transform: uppercase;
 }
 
 p {
     white-space: pre-wrap;
     line-height: 1.8;
+    max-width: 70ch;
 }
 
 p + p {
     margin-top: 1em;
+}
+
+a {
+    color: $black;
 }
