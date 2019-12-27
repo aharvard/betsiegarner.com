@@ -10,7 +10,25 @@ html {
 body {
     color: $black;
     font-size: 1.15em;
-    font-family: "Century Schoolbook Roman", cursive;
+    font-family: $font-family-regular;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+
+    @media #{$bp-x-small} {
+        // background: red;
+    }
+    @media #{$bp-small} {
+        // background: blue;
+    }
+    @media #{$bp-medium} {
+        // background: purple;
+    }
+    @media #{$bp-large} {
+        // background: green;
+    }
+    @media #{$bp-x-large} {
+        // background: yellow;
+    }
 }
 
 main {

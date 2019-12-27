@@ -4,16 +4,16 @@ $h1Size: 5
 $h2Size: 1.25
 $lightSchoolColor: #fd0
 $darkSchoolColor: #4F2984
-$mobile: 37em
-$tablet: 56em
+$medium: 37em
+$large: 56em
 
-//------------------ 
+//------------------
 //-- Global
-//------------------ 
+//------------------
 
-::selection 
- background: $lightSchoolColor
- color: $darkSchoolColor
+::selection
+  background: $lightSchoolColor
+  color: $darkSchoolColor
 
 html
   font-size: 100%
@@ -21,38 +21,36 @@ html
 body
   color: $black
   font-size: 1.15em
-  font-family: 'SchoolBook', serif;
-  @media (max-width: #{$mobile}) 
+  font-family: 'SchoolBook', serif
+  @media (max-width: #{$medium})
     // font-size: 1em
 
-h1 
+h1
   font-size: $h1Size + em
   margin: 0 0 1rem
   text-transform: uppercase
   font-weight: 400
 
-
-h2 
+h2
   font-size: 1em
   letter-spacing: .05em
   font-weight: 400
 
-
 .site-main
-  max-width: 64rem;
-  margin: 0 auto;
-  padding: 1rem 2.5rem;
-  @media (max-width: #{$mobile}) 
-    padding: 1rem;
+  max-width: 64rem
+  margin: 0 auto
+  padding: 1rem 2.5rem
+  @media (max-width: #{$medium})
+    padding: 1rem
 
 .navbar
-  max-width: 64rem;
-  margin: 0 auto 1rem;
+  max-width: 64rem
+  margin: 0 auto 1rem
   padding: 1rem 2rem
   display: flex
   justify-content: flex-end
-  @media (max-width: #{$mobile}) 
-    padding: 1rem;
+  @media (max-width: #{$medium})
+    padding: 1rem
 
 .navbar-item
   margin-left: 1rem
@@ -61,15 +59,15 @@ h2
   text-decoration: none
   color: $black
 
-  &:hover, &:focus 
+  &:hover, &:focus
     border-color: $black
 
   &.navbar-item--active
     border-color: $black
 
-//------------------ 
+//------------------
 //-- Pages
-//------------------ 
+//------------------
 
 .home-page-title
   background: #333
@@ -97,29 +95,27 @@ h2
       display: block
       width: 50%
       margin: .5em auto 0
-    @media (max-width: #{$mobile}) 
+    @media (max-width: #{$medium})
       font-size: 3rem
 
-    
-    
 .bio-page
   max-width: 47rem
 
   h1::first-letter
     font-size: 1.5em
-  
+
   p
     margin: 0 0 2.4rem
     white-space: pre-wrap
     line-height: 1.8
 
 .cv-page
-  h1 
+  h1
     font-size: ($h1Size * 1.5) + em
 
-//------------------ 
+//------------------
 //-- Sections
-//------------------ 
+//------------------
 
 .cv-section
   margin-bottom: 5rem
@@ -129,97 +125,91 @@ h2
     border-bottom: 2px solid $gray
     text-transform: uppercase
 
-// .cv-section--contact 
-// .cv-section--academic-appointment 
-// .cv-section--education 
-  
-.cv-section--interests
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr))
-  grid-gap: 1rem;
+// .cv-section--contact
+// .cv-section--academic-appointment
+// .cv-section--education
 
-  h2 
+.cv-section--interests
+  display: grid
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr))
+  grid-gap: 1rem
+
+  h2
     grid-column: 1 / -1
     margin-bottom: .5rem
   .entry
     display: flex
     flex-direction: column
     margin-bottom: 0
-  
 
 // .cv-section--publications
-// .cv-section--papers-in-progress 
-// .cv-section--funding 
-// .cv-section--awards 
+// .cv-section--papers-in-progress
+// .cv-section--funding
+// .cv-section--awards
 // .cv-section--conference-presentations
 // .cv-section--campus-presentations
-// .cv-section--teaching-experience 
-// .cv-section--professional-development  
-// .cv-section--affiliations 
+// .cv-section--teaching-experience
+// .cv-section--professional-development
+// .cv-section--affiliations
 // .cv-section--media
 // .cv-section--pro-service
-// .cv-section--university-service  
-// .cv-section--department-service 
+// .cv-section--university-service
+// .cv-section--department-service
 // .cv-section--public-service
 // .cv-section--references
 
-//------------------ 
+//------------------
 //-- Entries
-//------------------ 
+//------------------
 .entry
   margin-bottom: 3rem
   display: grid
   grid-template-columns: 6rem 1.75fr 15rem
   grid-gap: 1rem 2rem
   line-height: 1.5
-  align-items: first baseline;
+  align-items: first baseline
 
-  // > * 
+  // > *
     // outline: 1px dashed lightblue
-  @media (max-width: #{$mobile}) 
+  @media (max-width: #{$medium})
     margin-bottom: 3rem
     grid-gap: 1rem 2rem
     grid-template-columns: 1fr 4fr
-    
-  
+
   .cv-section--publications &,
   .cv-section--papers-in-progress &
     > *
       max-width: 32rem
 
-
-  
   .cv-section--interests &
-    display: flex;
-  
+    display: flex
+
   .cv-section--funding &
     grid-template-columns: 15rem 3fr 1fr
-    .institution 
+    .institution
       grid-column: 2 / 3
-    @media (max-width: #{$mobile})
+    @media (max-width: #{$medium})
       grid-template-columns: 6rem 1fr
 
-  
   .cv-section--awards &
     grid-template-columns: 10rem 1fr
     > *
       max-width: 31rem
 
-    @media (max-width: #{$mobile})
+    @media (max-width: #{$medium})
       grid-template-columns: 5rem 1fr
-    
 
   .cv-section--conference-presentations &
     grid-template-columns: 5rem 3fr 10rem
     > *
       max-width: 30rem
-    .location 
+    .location
       grid-row: 1 / 2
-    @media (max-width: #{$tablet})
+    @media (max-width: #{$large})
       grid-template-columns: 3rem 2fr 1fr
-    @media (max-width: #{$mobile})
+    @media (max-width: #{$medium})
       grid-template-columns: 3rem 1fr
-      .location 
+      .location
         grid-row: initial
 
   .cv-section--campus-presentations &
@@ -228,72 +218,70 @@ h2
       max-width: 30rem
     .institution
       grid-row: 1 / 2
-      @media (max-width: #{$mobile})
+      @media (max-width: #{$medium})
         grid-row: initial
-    @media (max-width: #{$tablet})
+    @media (max-width: #{$large})
       grid-template-columns: 3rem 2fr 1fr
-    @media (max-width: #{$mobile})
+    @media (max-width: #{$medium})
       grid-template-columns: 3rem 1fr
-  
+
   .cv-section--professional-development &
     .institution
       grid-row: 1 / 2
-    @media (max-width: #{$mobile})
+    @media (max-width: #{$medium})
       grid-template-columns: 7rem 1fr
       .institution
         grid-row: initial
 
-
   .cv-section--teaching-experience &
     grid-template-columns: 9rem 1.5fr 1fr
     // outline: 1px solid red
-    .institution 
+    .institution
       grid-row: 1 / 2
-    @media (max-width: #{$mobile}) 
+    @media (max-width: #{$medium})
       grid-template-columns: 5rem 1fr
-      .institution 
+      .institution
         grid-row: inital
-  
+
   .cv-section--professional-development &
     grid-template-columns: 9rem 1.5fr 1fr
-    @media (max-width: #{$mobile}) 
+    @media (max-width: #{$medium})
       grid-template-columns: 5rem 1fr
-  
-  
+
   .cv-section--affiliations &
     grid-template-columns: 12rem  1fr
-    .title 
+    .title
       grid-column: 1 / 2
-    @media (max-width: #{$mobile})
-      grid-template-columns: 4rem 1fr
-    
-  .cv-section--media &
-    @media (max-width: #{$mobile})
+    @media (max-width: #{$medium})
       grid-template-columns: 4rem 1fr
 
-  .cv-section--pro-service &, 
+  .cv-section--media &
+    @media (max-width: #{$medium})
+      grid-template-columns: 4rem 1fr
+
+  .cv-section--pro-service &,
   .cv-section--university-service &,
-  .cv-section--department-service &, 
-    grid-template-columns: 9rem 1fr 
-    > * 
+  .cv-section--department-service &,
+    grid-template-columns: 9rem 1fr
+    > *
       max-width: 25em
-    @media (max-width: #{$mobile})
+    @media (max-width: #{$medium})
       grid-template-columns: 6rem 1fr
-  
+
   .cv-section--public-service &
     grid-template-columns: 12rem 2fr 1fr
-    @media (max-width: #{$mobile})
+    @media (max-width: #{$medium})
       grid-template-columns: 6rem 1fr
 
 .address
   grid-column: 1 / 3
-  p 
+  p
     margin: 0
 
 .amount
   grid-column: 3 / 4
   grid-row: 1 / 2
-  @media (max-width: #{$mobile}) 
+  @media (max-width: #{$medium})
     grid-column: 2 / 3
     grid-row: initial
 
@@ -312,31 +300,31 @@ h2
 .course
   padding: 0
   margin: 0
-  & + & 
+  & + &
     margin-top: .25rem
 
-.conference, 
+.conference,
 .conference-details
   grid-column: 2 / 3
   align-self: flex-start
 
-.event 
+.event
   text-indent: 0
   margin-top: 1em
 
-.institution 
+.institution
   grid-column: 3 / 4
-  @media (max-width: #{$mobile}) 
+  @media (max-width: #{$medium})
     grid-column: 2 / 3
 
-// .institution-location  
+// .institution-location
 
 // .interest
 
 .journal
-  grid-column: 3 / 4 
+  grid-column: 3 / 4
   grid-row: 1 / 3
-  @media (max-width: #{$mobile}) 
+  @media (max-width: #{$medium})
     grid-row: initial
     grid-column: 2 / 3
 
@@ -346,33 +334,32 @@ h2
   font-style: italic
   margin-bottom: .25em
 
-.location 
+.location
   grid-column: 3 / 4
-  @media (max-width: #{$mobile}) 
+  @media (max-width: #{$medium})
     grid-column: 2 / 3
 
 .organization
-  @media (max-width: #{$mobile}) 
+  @media (max-width: #{$medium})
     grid-column: 2 / 3
 
 .status
   grid-row: 1 / 2
   grid-column: 3 / 4
-  @media (max-width: #{$mobile}) 
+  @media (max-width: #{$medium})
     grid-row: initial
     grid-column: 2 / 3
-
 
 .sub-title
   grid-column: 2 / 3
 
-.title 
+.title
   grid-column: 2 / 3
-  p 
+  p
     margin: 0
 
 .title--quotes
   text-indent: -0.43em
 
-.year 
+.year
   grid-column: 1 / 2

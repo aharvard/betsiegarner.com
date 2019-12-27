@@ -4,14 +4,13 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Century Schoolbook Bold";
+    font-family: $font-family-bold;
     font-size: 2rem;
-    margin-bottom: 1em;
+    line-height: 1;
 }
 
 h1 {
     font-size: 4rem;
-    margin-bottom: 1em;
     text-transform: uppercase;
 }
 

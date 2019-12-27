@@ -2,8 +2,8 @@
 @import "variables";
 
 // TOOLS
-// @import "mixin-text-styles";
-@import "mixin-layout";
+@import "mixin-text-styles";
+@import "mixin-site-width";
 
 // GENERIC
 @import "reset";
@@ -17,5 +17,6 @@
 @import "obj-cv-section";
 @import "obj-site-header";
 @import "obj-site-nav";
+@import "obj-home-objects";
 
 // UTILITIES

@@ -1,0 +1,114 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    @media #{$bp-x-small}, #{$bp-small}, #{$bp-medium} {
+        flex-direction: column;
+        padding: 3rem 1rem;
+
+        * {
+            flex: 0 0 auto;
+        }
+    }
+}
+
+.home-cards__container {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    @media #{$bp-x-small}, #{$bp-small}, #{$bp-large} {
+        grid-template-columns: 1fr;
+    }
+}
+
+.home-title {
+    font-size: 4.5rem;
+    font-family: $font-family-bold-italic;
+    line-height: 0.9;
+    letter-spacing: -0.025em;
+    border-right: 3px solid $black;
+    padding: 6rem 4rem 6rem 0;
+    margin: 0 4rem 0 0;
+    text-align: center;
+    @media #{$bp-medium} {
+        margin: 0 0 4rem 0;
+        padding: 0 0 4rem 0;
+    }
+    @media #{$bp-small} {
+        font-size: 4rem;
+        padding: 0 0 2rem 0;
+        margin: 0 0 2rem 0;
+    }
+    @media #{$bp-x-small} {
+        font-size: 3rem;
+        padding: 0 0 2rem 0;
+        margin: 0 0 2rem 0;
+    }
+    @media #{$bp-x-small}, #{$bp-small}, #{$bp-medium} {
+        border-right: none;
+        border-bottom: 3px solid $black;
+    }
+
+    .home-title__span {
+        display: block;
+
+        &:first-child {
+            @media #{$bp-large}, #{$bp-x-large} {
+                transform: translateX(-1em);
+            }
+        }
+    }
+    .home-title__first-letter {
+        font-size: 1.2em;
+    }
+}
+
+.home-card {
+    align-items: flex-end;
+    background: $black;
+    color: white;
+    display: flex;
+    font-size: 6rem;
+    height: 10rem;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    width: 10rem;
+    transition: all 250ms ease;
+
+    .home-card__link-text {
+        transition: inherit;
+    }
+
+    &:hover,
+    &:focus {
+        opacity: 0.9;
+        .home-card__link-text {
+            transform: scale(0.8);
+        }
+    }
+
+    &[href="/portfolio/"] {
+        font-family: $font-family-italic;
+        line-height: 0.9;
+        align-items: center;
+
+        .home-card__link-text {
+            flex-direction: column;
+            display: inherit;
+            font-size: 80%;
+
+            *:first-child {
+                transform: translateX(-0.1em);
+            }
+            *:last-child {
+                transform: translateX(0.25em);
+            }
+        }
+    }
+}

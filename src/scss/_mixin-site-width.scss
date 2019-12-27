@@ -3,7 +3,7 @@
     margin: 0 auto;
     padding: 1rem 2.5rem;
 
-    @media (max-width: #{$mobile}) {
+    @media (max-width: #{$medium}) {
         padding: 1rem;
     }
 }

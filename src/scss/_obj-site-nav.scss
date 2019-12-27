@@ -4,7 +4,7 @@
     padding: 1rem 2rem;
     display: flex;
     justify-content: flex-end;
-    @media (max-width: #{$mobile}) {
+    @media (max-width: #{$medium}) {
         padding: 1rem;
     }
 }

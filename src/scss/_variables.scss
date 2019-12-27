@@ -5,6 +5,22 @@ $lightSchoolColor: #fd0;
 $darkSchoolColor: #4f2984;
 
 // SIZE
-$site-width: 64rem;
-$mobile: 37em;
-$tablet: 56em;
+$site-width: 75em; // 1200px
+
+$small: 25em; // 400px
+$medium: 37.5em; // 600px
+$large: 56.25em; // 900px
+$x-large: $site-width; // 1200px
+
+// BREAKPOINTS
+$bp-x-small: "(max-width: #{$small})";
+$bp-small: "(min-width: #{$small}) and (max-width: #{$medium})";
+$bp-medium: "(min-width: #{$medium}) and (max-width: #{$large})";
+$bp-large: "(min-width: #{$large}) and (max-width: #{$x-large})";
+$bp-x-large: "(min-width: #{$x-large})";
+
+// FONT FAMILY
+$font-family-regular: "Century Schoolbook Roman", "Century Schoolbook", serif;
+$font-family-bold: "Century Schoolbook Bold", "Century Schoolbook", serif;
+$font-family-italic: "Century Schoolbook Italic", "Century Schoolbook", serif;
+$font-family-bold-italic: "Century Schoolbook Bold Italic", "Century Schoolbook", serif;

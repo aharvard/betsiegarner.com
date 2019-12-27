@@ -1,8 +1,26 @@
 {% extends "base.njk" %}
 
+{% block header %}
+  <header>
+    <a href="/">Betsie Garner</a>
+    <nav>
+      {{ collections.all | eleventyNavigation | eleventyNavigationToHtml({
+        listClass: "nav__list",
+        listItemClass: "nav__list-item",
+        anchorClass: "nav__link",
+        activeListItemClass: "nav__list-item--active",
+        activeAnchorClass: "nav__link--active",
+        activeKey: eleventyNavigation.key
+      }) | safe }}
+    </nav>
+  </header>
+{% endblock %}
+
 {% block main %}
-  <h1>
-    {{ title }}
-  </h1>
-  {{ content | safe }}
+  <main>
+    <h1>
+      {{ title }}
+    </h1>
+    {{ content | safe }}
+  </main>
 {% endblock %}
