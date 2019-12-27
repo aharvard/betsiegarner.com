@@ -4,3 +4,58 @@ header {
     align-items: center;
     @include site-width;
 }
+
+.header-title {
+    text-transform: uppercase;
+    font-family: $font-family-bold-italic;
+    text-decoration: none;
+}
+
+.home-title__span {
+    display: block;
+
+    &:last-child {
+        margin-left: 1em;
+    }
+}
+
+.header-title__first-letter {
+    font-size: 1.2em;
+}
+
+.nav__list {
+    max-width: 64rem;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: flex-end;
+    @media (max-width: #{$medium}) {
+        padding: 1rem;
+    }
+}
+
+.nav__list-item {
+    // hide descendant items
+    ul {
+        display: none;
+    }
+}
+
+.nav__link {
+    margin-left: 0.25em;
+    flex: 0 0 auto;
+    text-decoration: none;
+    color: white;
+    font-family: $font-family-bold;
+    background: $black;
+    padding: 0.5em 1em 0.4em;
+    line-height: 1;
+
+    &:hover,
+    &:focus {
+    }
+
+    &.nav__link--active {
+        background: red;
+    }
+}

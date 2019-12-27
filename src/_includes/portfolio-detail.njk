@@ -1,0 +1,18 @@
+{% extends "inner.njk" %}
+
+{% block main %}
+  <main>
+    <h1 class="page-title">
+      {{ title }}
+    </h1>
+    {{ collections.all | eleventyNavigation("portfolio") | eleventyNavigationToHtml({
+        listClass: "",
+        listItemClass: "",
+        anchorClass: "",
+        activeListItemClass: "",
+        activeAnchorClass: "",
+        activeKey: eleventyNavigation.key
+      }) | safe }}
+    {{ content | safe }}
+  </main>
+{% endblock %}

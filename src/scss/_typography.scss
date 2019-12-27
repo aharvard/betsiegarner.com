@@ -9,11 +9,6 @@ h6 {
     line-height: 1;
 }
 
-h1 {
-    font-size: 4rem;
-    text-transform: uppercase;
-}
-
 p {
     white-space: pre-wrap;
     line-height: 1.8;
@@ -26,4 +21,10 @@ p + p {
 
 a {
     color: $black;
+}
+
+.page-title {
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin: 1em 0;
 }

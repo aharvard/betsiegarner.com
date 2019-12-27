@@ -2,9 +2,15 @@
 
 {% block header %}
   <header>
-    <a href="/">Betsie Garner</a>
-    <nav>
-      {{ collections.all | eleventyNavigation | eleventyNavigationToHtml({
+    <a class="header-title" href="/">
+      <span class="home-title__span">
+        <span class="header-title__first-letter">B</span>etsie </span>
+      <span class="home-title__span">
+        <span class="header-title__first-letter">G</span>arner</a>
+    </span>
+  </span>
+  <nav>
+    {{ collections.all | eleventyNavigation("main") | eleventyNavigationToHtml({
         listClass: "nav__list",
         listItemClass: "nav__list-item",
         anchorClass: "nav__link",
@@ -12,15 +18,15 @@
         activeAnchorClass: "nav__link--active",
         activeKey: eleventyNavigation.key
       }) | safe }}
-    </nav>
-  </header>
+  </nav>
+</header>
 {% endblock %}
 
 {% block main %}
-  <main>
-    <h1>
-      {{ title }}
-    </h1>
-    {{ content | safe }}
-  </main>
+<main>
+  <h1 class="page-title">
+    {{ title }}
+  </h1>
+  {{ content | safe }}
+</main>
 {% endblock %}

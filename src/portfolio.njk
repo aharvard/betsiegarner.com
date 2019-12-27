@@ -2,50 +2,19 @@
 layout: inner.njk
 title: Portfolio
 eleventyNavigation:
-  key: Portfolio
+  key: portfolio
+  order: 2
+  parent: main
 ---
 
-<div class="portfolio-body">
-  <nav class="portfolio-nav">
-    <ul>
-      <li>
-        <a href="#teaching">Teaching</a>
-      </li>
-      <li>
-        <a href="#research">Research</a>
-      </li>
-      <li>
-        <a href="#service">Service</a>
-      </li>
-    </ul>
-  </nav>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto quibusdam, temporibus delectus consequatur quidem alias nostrum mollitia nobis ducimus possimus accusantium, magnam repudiandae harum at error sed fugiat aliquid repellat!</p>
 
-  <div class="portfolio-sections">
-    <section class="portfolio-section">
-      <h2 id="teaching"> Teaching</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores totam alias quasi corporis atque a deleniti tenetur? Dicta inventore sint eum incidunt, quibusdam aspernatur, beatae quidem non aut, magni fugit.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eaque est ducimus voluptatem nesciunt veritatis corporis facilis incidunt nam assumenda? Ducimus amet suscipit molestiae. Libero suscipit possimus tenetur voluptate iste.</p>
-      <h3>Lorem Ipsum</h3>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores nihil culpa facere quod tempora iste placeat dicta! Impedit velit iste ipsa atque qui veniam, quia, amet quasi accusantium, porro ut.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem vel odit quisquam. Optio cum asperiores ea totam placeat non adipisci, inventore repellendus unde. Molestias, deleniti asperiores odio blanditiis eos quis.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, deleniti. Quas cum possimus, voluptatibus, magni nisi culpa dolorem sequi natus ratione vero impedit sunt non odio? Perferendis ipsum debitis magni.</p>
-    </section>
-
-    <hr>
-
-    <section class="portfolio-section">
-      <h2 id="research">Research</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus tenetur mollitia enim earum voluptate nostrum hic repudiandae magnam omnis aperiam eligendi porro, eveniet, id et odit voluptatem! Minus, dolorum eum?</p>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias, natus architecto. Illum nulla nesciunt, sit labore culpa suscipit qui est sed deserunt rem ipsum, sunt, enim totam eius atque minima.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis doloribus quos iusto nam illum. Distinctio placeat hic, ipsum, cum nam, voluptatibus nesciunt aut consequuntur quae quidem maiores iusto. Ad, soluta!</p>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi et suscipit tenetur explicabo. Similique beatae est sint, nostrum excepturi asperiores quidem ipsa voluptatum laudantium odit cum cupiditate dolor incidunt labore.</p>
-    </section>
-
-    <section class="portfolio-section">
-      <h2 id="service">Service</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore maiores officia, similique impedit cumque molestias. Architecto adipisci corrupti officiis nostrum qui aut iusto facilis iure minima fugit, molestias ipsum repellendus!</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident at, voluptates facilis, nobis saepe animi perferendis dignissimos labore molestiae, harum quae facere maxime accusamus sint atque sapiente natus debitis commodi.</p>
-    </section>
-
-  </div>
-</div>
+{{ collections.all | eleventyNavigation("portfolio") | eleventyNavigationToHtml({
+        listClass: "",
+        listItemClass: "",
+        anchorClass: "",
+        activeListItemClass: "",
+        activeAnchorClass: "",
+        activeKey: eleventyNavigation.key
+      }) | safe }}
+{{ content | safe }}
