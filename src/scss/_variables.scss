@@ -20,7 +20,7 @@ $bp-large: "(min-width: #{$large}) and (max-width: #{$x-large - 0.01em})";
 $bp-x-large: "(min-width: #{$x-large})";
 
 // FONT FAMILY
-$font-family-regular: "Century Schoolbook Roman", "Century Schoolbook", serif;
-$font-family-bold: "Century Schoolbook Bold", "Century Schoolbook", serif;
-$font-family-italic: "Century Schoolbook Italic", "Century Schoolbook", serif;
-$font-family-bold-italic: "Century Schoolbook Bold Italic", "Century Schoolbook", serif;
+$font-family-regular: "CenturySchoolbook", "Century Schoolbook", serif;
+$font-family-bold: "CenturySchoolbookBold", "Century Schoolbook", serif;
+$font-family-italic: "CenturySchoolbookItalic", "Century Schoolbook", serif;
+$font-family-bold-italic: "CenturySchoolbookBoldItalic", "Century Schoolbook", serif;

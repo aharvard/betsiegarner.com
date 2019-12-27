@@ -8,16 +8,16 @@
  * 
  * You may obtain a valid license at the URLs below.
  * 
- * Webfont: Century Schoolbook Bold by Bitstream
+ * Webfont: CenturySchoolbookBold by Bitstream
  * URL: https://www.myfonts.com/fonts/bitstream/century-schoolbook/wgl-bold/
  * 
- * Webfont: Century Schoolbook Bold Italic by Bitstream
+ * Webfont: CenturySchoolbookBoldItalic by Bitstream
  * URL: https://www.myfonts.com/fonts/bitstream/century-schoolbook/wgl-bold-italic/
  * 
- * Webfont: Century Schoolbook Italic by Bitstream
+ * Webfont: CenturySchoolbookItalic by Bitstream
  * URL: https://www.myfonts.com/fonts/bitstream/century-schoolbook/wgl-italic/
  * 
- * Webfont: Century Schoolbook Roman by Bitstream
+ * Webfont: CenturySchoolbook by Bitstream
  * URL: https://www.myfonts.com/fonts/bitstream/century-schoolbook/wgl-roman/
  * 
  * 
@@ -31,25 +31,25 @@
 @import url("//hello.myfonts.net/count/3ac19a");
 
 @font-face {
-    font-family: "Century Schoolbook Bold";
+    font-family: "CenturySchoolbookBold";
     src: url("webfonts/3AC19A_0_0.eot");
     src: url("webfonts/3AC19A_0_0.eot?#iefix") format("embedded-opentype"), url("webfonts/3AC19A_0_0.woff2") format("woff2"), url("webfonts/3AC19A_0_0.woff") format("woff"), url("webfonts/3AC19A_0_0.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "Century Schoolbook Bold Italic";
+    font-family: "CenturySchoolbookBoldItalic";
     src: url("webfonts/3AC19A_1_0.eot");
     src: url("webfonts/3AC19A_1_0.eot?#iefix") format("embedded-opentype"), url("webfonts/3AC19A_1_0.woff2") format("woff2"), url("webfonts/3AC19A_1_0.woff") format("woff"), url("webfonts/3AC19A_1_0.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "Century Schoolbook Italic";
+    font-family: "CenturySchoolbookItalic";
     src: url("webfonts/3AC19A_2_0.eot");
     src: url("webfonts/3AC19A_2_0.eot?#iefix") format("embedded-opentype"), url("webfonts/3AC19A_2_0.woff2") format("woff2"), url("webfonts/3AC19A_2_0.woff") format("woff"), url("webfonts/3AC19A_2_0.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "Century Schoolbook Roman";
+    font-family: "CenturySchoolbook";
     src: url("webfonts/3AC19A_3_0.eot");
     src: url("webfonts/3AC19A_3_0.eot?#iefix") format("embedded-opentype"), url("webfonts/3AC19A_3_0.woff2") format("woff2"), url("webfonts/3AC19A_3_0.woff") format("woff"), url("webfonts/3AC19A_3_0.ttf") format("truetype");
 }
