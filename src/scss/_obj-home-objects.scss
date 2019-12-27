@@ -106,6 +106,7 @@
 
     .home-card__link-text {
         transition: inherit;
+        outline: 1px solid;
     }
 
     &:hover,
@@ -128,9 +129,11 @@
 
             *:first-child {
                 transform: translateX(-0.1em);
+                outline: 1px solid;
             }
             *:last-child {
                 transform: translateX(0.25em);
+                outline: 1px solid;
             }
         }
     }
