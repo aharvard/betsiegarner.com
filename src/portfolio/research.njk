@@ -7,16 +7,32 @@ eleventyNavigation:
   parent: portfolio
 ---
 
-{% macro portfolioSection(number, title, blurb) %}
+{% macro portfolioSection(number, title, date = "0000", details) %}
   <section class="portfolio-section">
+
     <span class="section-number__box" aria-label="project 1">
       <span class="section-number__text">{{number}}</span>
     </span>
-    <div>
-      <h2 class="section-title">{{title}}</h2>
-      <p class="section-blurb">{{blurb}}</p>
+
+    <h2 class="section-title">{{title}}</h2>
+    <p class="section-date">{{date}}</p>
+
+    <div class="section-body">
+      {{ caller() }}
     </div>
-    {{ caller() }}
+
+    <div class="section-details">
+      {# <h2 class="section-details__heading">Project Details</h2> #}
+      <div class="section-details__items">
+        {% for detail in details %}
+          <div class="section-details__item">
+            <h3 class="section-detail__title" aria-label="Project {{number}} {{detail.title}}">{{detail.title}}</h3>
+            <p class="section-detail__description">{{detail.description | safe}}</p>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
   </section>
 {% endmacro %}
 
@@ -31,24 +47,44 @@ eleventyNavigation:
 
 {% call portfolioSection(
   number="1", 
-  title="Interview Study of Gendered Approaches to Work-Family Balance", blurb="Honors thesis completed as an undergraduate at Emory University"
-  ) %}
-<h3>Data & Methods</h3>
-<p>in-depth, semi-structured interviews with 20 college seniors (10 women and 10 men) about career aspirations and plans for family; interviews were recorded digitally, transcribed verbatim, and coded thematically with MAXQDA</p>
+  title="Interview Study of Gendered Approaches to Work-Family Balance", 
+  date="2010-2011",  
+  details=[
+    {
+      title: "methods", 
+      description: "in-depth, semi-structured interviews"
+    },
+    {
+      title: "dissemination", 
+      description: '<a href="#">2012 Work and Family Researchers Network Conference</a>'
+    },
+    {
+      title: "publication", 
+      description: '<a target="_blank" href="https://etd.library.emory.edu/concern/etds/3n203z49c">Emory Theses and Dissertations Repository</a>"'
+    },
+    
+    {
+      title: "recognition", 
+      description: "Highest Honors by the Emory College Honors Committee"
+    }
 
-<h3>Findings</h3>
-<p>women anticipate making difficult choices in order to resolve conflicts between work and family, but men imagine they will easily “have it all”</p>
+]) %}
 
-<h3>Dissemination</h3>
-<p>presented at the 2012 Work and Family Researchers Network Conference</p>
+<p>During my senior year of college at Emory University, I completed the Honors Program through the Department of Sociology.  This was my first experience conducting a professional academic study from beginning to end, including everything from research design and IRB approval to writing up results and presenting at a conference.</p>
 
-<h3>publication</h3>
-<p>published to the Emory Theses and Dissertations Repository</p>
+<p>My research project was inspired by an observation made by Gloria Steinem in her 1984 national bestseller <em>Outrageous Acts and Everyday Rebellions</em>: “I’ve yet to be on a campus where most women weren’t worrying about some aspect of combining marriage, children, and a career.  I’ve yet to find one where many men were worrying about the same thing.”</p>
 
-<a href="https://etd.library.emory.edu/concern/etds/3n203z49c?locale=pt-BR">Link to Publication</a>
+<p>I was familiar with recent scholarship on gender, work, and family through my coursework as an undergraduate sociology major, but most of that research focused on the experiences of men and women who were already married and raising children.  There was very little research available on the views of contemporary young adults like my college peers.</p>
+
+<p>I wondered if things had changed since the 1970s and 80s, so I designed an interview study of college seniors and their approaches to work-family balance.  I conducted in-depth, semi-structured interviews with 20 students, 10 women and 10 men, asking them open-ended questions about their career aspirations and plans for family.  The interviews were digitally recorded and transcribed verbatim, and I used MAXQDA to code the interview transcripts using themes that were arrived at both inductively and deductively.</p>
+
+<p>What I found is that gender accounted for a significant difference in how students responded: women anticipated making difficult choices in order to resolve conflicts between work and family, but men imagined they would easily “have it all” without making any personal sacrifices.</p>
+
+<p>This insight has meaningful implications for policy makers and advocates working to support parents, especially mothers, as they negotiate the competing demands of work and family.  For example, it provides empirical evidence that college students have apparently changed very little in their thinking on this issue in recent decades.  At the same time however, it suggests that college may represent a time in the life course that is ripe for intervention given that young adults at this point are formulating their career aspirations and plans for family but not yet committed to particular work-family arrangements.</p>
+
 {% endcall %}
 
-{% call portfolioSection(number = "2", title = "Ethnography of Parenting, Work, and Leisure in Museums", blurb = "Master’s thesis completed as a graduate student at the University of Pennsylvania") %}
+{% call portfolioSection(number = "2", title = "Ethnography of Parenting, Work, and Leisure in Museums") %}
 
 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias officia, voluptatum laborum magnam reiciendis iste quibusdam cupiditate beatae omnis atque commodi illo odio excepturi voluptatem quaerat, fuga porro ea eos.</p>
 
