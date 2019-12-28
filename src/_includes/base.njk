@@ -17,5 +17,12 @@
     {% block main %}
       {{ content | safe }}
     {% endblock %}
+
+    <script>
+      const isWindows = navigator
+        .platform
+        .indexOf('Win') > -1
+      console.log(`isWindows ${isWindows}`)
+    </script>
   </body>
 </html>
