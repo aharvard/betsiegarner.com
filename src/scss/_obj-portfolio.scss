@@ -89,22 +89,11 @@
     // margin: 0;
     // grid-column: 2 / 3;
     // grid-row-start: 3;
+    max-width: $medium;
 }
 .section-details {
-    // display: grid;
-    // grid-template-columns: auto 1fr;
-    // align-items: baseline;
-    // gap: 0 2rem;
-    // margin-top: 1em;
-    // margin-bottom: 1em;
-    // margin-left: 2rem;
-    // margin-right: 10%;
-    // padding: 1rem 0;
-    // grid-row: 2 / 4;
-    // grid-column: 3 / 4;
-    // align-self: flex-end;
-    // border-top: 1px solid lighten($black, 40%);
-    // border-bottom: 1px solid lighten($black, 40%);
+    margin-top: 1rem;
+    border-top: 1px solid lighten($black, 60%);
 }
 
 .section-details__heading {
@@ -112,30 +101,27 @@
 }
 
 .section-details__items {
-    gap: 1rem;
-    grid-template-columns: repeat(4, 1fr);
-    display: grid;
     margin-top: 2rem;
+    display: grid;
 }
 .section-details__item {
-    // columns: 2;
+    grid-row: 1;
+    padding-right: 1rem;
 }
 
 .section-detail__title {
-    // grid-column: 1 / 2;
     margin-bottom: 0.4em;
-    font-size: 0.8rem;
-    // letter-spacing: 0.15em;
+    font-size: 0.9rem;
     font-family: $font-family-bold;
     text-transform: capitalize;
-    // border-top: 1px solid red;
 }
 
 .section-detail__description {
     // grid-column: 2 / 3;
-    font-size: 0.8rem;
-    line-height: 1.4;
+    font-size: 0.9rem;
+    line-height: 1.5;
     margin-bottom: 1.25rem;
+    max-width: 55ch;
 }
 
 .portfolio-children {
