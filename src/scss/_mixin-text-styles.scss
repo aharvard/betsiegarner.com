@@ -4,3 +4,25 @@
         top: -0.15em;
     }
 }
+
+@mixin text-display-1 {
+    font-size: 4rem;
+    letter-spacing: -0.02em;
+}
+
+@mixin text-display-2 {
+    font-size: 3rem;
+    line-height: 1.2;
+    font-family: $font-family-italic;
+    letter-spacing: -0.05em;
+}
+
+@mixin text-heading-1 {
+    text-transform: uppercase;
+    font-size: 1.25rem;
+}
+
+@mixin text-body-1 {
+    font-size: 1.7rem;
+    line-height: 1.3;
+}

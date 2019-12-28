@@ -1,9 +1,16 @@
-.portfolio-body {
-    display: flex;
-    align-items: flex-start;
-}
-.portfolio-nav {
-    margin-right: 2rem;
-    position: sticky;
-    top: 1rem;
+main {
+    margin: 0 auto;
+    max-width: $large;
+    padding-top: 2rem;
+    min-height: 90vh;
+
+    &.bio {
+        p {
+            max-width: $medium;
+        }
+    }
+    &.portfolio {
+    }
+    &.cv {
+    }
 }

@@ -1,35 +1,50 @@
 .portfolio-detail {
-    // display: flex;
-
-    section + section {
-        margin-top: 4rem;
-    }
 }
 
 .portfolio-aside {
-    display: none;
+    // display: none;
+}
+
+.portfolio-nav {
+    display: flex;
+    margin: 0 auto;
+    justify-content: flex-end;
+    @include site-width;
+}
+
+.portfolio-nav__link {
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+.portfolio-nav__link--active {
+    color: red;
 }
 
 .portfolio-content {
 }
 
 .portfolio-intro {
-    margin-bottom: 4rem;
-
-    .page-title {
-        margin-bottom: 1rem;
-    }
+    // margin-bottom: 4rem;
+}
+.portfolio-blurb {
 }
 
 .portfolio-section {
-    margin-top: 2rem;
     display: grid;
     grid-template-columns: auto 1fr;
-    grid-gap: 1rem 3rem;
-    max-width: 55rem;
-    margin: 0 auto;
+    grid-gap: 0 3rem;
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $medium;
+
     > * {
         grid-column: 2 / -1;
+    }
+
+    h3 {
+        @include text-heading-1;
     }
 }
 
@@ -43,7 +58,7 @@
     width: 1.5em;
     font-family: $font-family-bold;
     grid-column: 1 / 1;
-    margin-top: 1rem;
+    margin-top: 0.4rem;
 }
 .section-number__text {
     line-height: 1;
@@ -51,40 +66,30 @@
     @include windows-nudge;
 }
 
-.portfolio-blurb {
-    // font-size: 1.25rem;
-    // line-height: 1.25;
-    margin-top: 0;
-}
-
 .section-title {
-    font-size: 3rem;
-    line-height: 1.2;
-    font-family: $font-family-italic;
-    max-width: 35ch;
-    letter-spacing: -0.05em;
+    @include text-display-2;
+    // margin-bottom: 0;
 }
 
 .section-blurb {
-    // font-family: $font-family-bold;
-    font-size: 1.8rem;
-    line-height: 1.2;
-    margin: 1rem 0;
+    @include text-body-1;
+    margin-bottom: 2rem;
 }
 
-.section-heading {
-    text-transform: uppercase;
-    font-size: 1.25rem;
-    margin-top: 2rem;
-    margin-left: -1rem;
+.portfolio-children {
+    margin: 4rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 10rem;
+    grid-gap: 1rem;
 }
-
-.ingredients {
-    margin-top: 2rem;
-    * {
-        font-size: 0.85rem;
-    }
-    p + h3 {
-        margin-top: 1rem;
-    }
+.portfolio-link {
+    display: block;
+    background: $black;
+    color: white;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+    @include text-display-1;
 }

@@ -3,6 +3,8 @@ header {
     justify-content: space-between;
     align-items: center;
     @include site-width;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .header-title {
@@ -23,7 +25,7 @@ header {
 .nav__list {
     max-width: 64rem;
     margin: 0 auto;
-    padding: 1rem 2rem;
+    // padding: 1rem 2rem;
     display: flex;
     justify-content: flex-end;
     @media (max-width: #{$medium}) {
@@ -39,20 +41,19 @@ header {
 }
 
 .nav__link {
-    margin-left: 0.25em;
+    font-family: $font-family-bold;
+    margin-left: 0.5em;
     flex: 0 0 auto;
     text-decoration: none;
-    color: white;
-    font-family: $font-family-bold;
-    background: $black;
-    padding: 0.5em 1em;
+    padding: 0.25em;
     line-height: 1;
+    @include windows-nudge;
 
     &:hover,
     &:focus {
     }
 
     &.nav__link--active {
-        background: red;
+        color: red;
     }
 }

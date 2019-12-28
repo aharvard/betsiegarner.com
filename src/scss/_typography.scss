@@ -12,19 +12,40 @@ h6 {
 p {
     white-space: pre-wrap;
     line-height: 1.8;
-    max-width: 70ch;
+    // max-width: 70ch;
 }
 
-p + p {
-    margin-top: 1em;
+p + {
+    p,
+    h2,
+    h3 {
+        margin-top: 1em;
+    }
+}
+
+main {
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-bottom: 0.5em;
+    }
 }
 
 a {
     color: $black;
 }
 
+em {
+    font-family: $font-family-italic;
+}
+
 .page-title {
-    font-size: 4rem;
-    // text-transform: uppercase;
-    margin: 1em 0;
+    @include text-display-1;
+    margin-bottom: 0.25em;
+}
+
+.page-blurb {
+    @include text-body-1;
 }

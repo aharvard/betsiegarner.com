@@ -1,9 +1,9 @@
 @mixin site-width {
     max-width: $site-width;
     margin: 0 auto;
-    padding: 1rem 2.5rem;
+    padding: 0 2.5rem;
 
     @media (max-width: #{$medium}) {
-        padding: 1rem;
+        padding: 0 1rem;
     }
 }

@@ -1,9 +1,8 @@
 {% extends "inner.njk" %}
 
 {% block main %}
-  <main class="portfolio-detail">
-    <aside class="portfolio-aside">
-      {{ collections.all | eleventyNavigation("portfolio") | eleventyNavigationToHtml({
+  <aside class="portfolio-aside">
+    {{ collections.all | eleventyNavigation("portfolio") | eleventyNavigationToHtml({
         listClass: "portfolio-nav",
         listItemClass: "",
         anchorClass: "portfolio-nav__link",
@@ -11,7 +10,8 @@
         activeAnchorClass: "portfolio-nav__link--active",
         activeKey: eleventyNavigation.key
       }) | safe }}
-    </aside>
+  </aside>
+  <main class="portfolio">
     <div class="portfolio-content">
       {{ content | safe }}
     </div>
