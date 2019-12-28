@@ -46,6 +46,13 @@
     h3 {
         @include text-heading-1;
     }
+
+    @media #{$bp-x-small}, #{$bp-small} {
+        grid-template-columns: 1fr;
+        > * {
+            grid-column: 1 / -1;
+        }
+    }
 }
 
 .section-number__box {
@@ -59,6 +66,7 @@
     font-family: $font-family-bold;
     grid-column: 1 / 1;
     margin-top: 0.4rem;
+    margin-bottom: 2rem;
 }
 .section-number__text {
     line-height: 1;

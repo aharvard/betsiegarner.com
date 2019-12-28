@@ -5,6 +5,24 @@
 
 html {
     font-size: 100%;
+    @media #{$bp-x-small} {
+        // background: red;
+        font-size: 80%;
+    }
+    @media #{$bp-small} {
+        // background: blue;
+        font-size: 90%;
+    }
+    @media #{$bp-medium} {
+        // background: purple;
+        font-size: 95%;
+    }
+    @media #{$bp-large} {
+        // background: green;
+    }
+    @media #{$bp-x-large} {
+        // background: yellow;
+    }
 }
 
 body {
@@ -13,22 +31,6 @@ body {
     font-family: $font-family-regular;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-
-    @media #{$bp-x-small} {
-        // background: red;
-    }
-    @media #{$bp-small} {
-        // background: blue;
-    }
-    @media #{$bp-medium} {
-        // background: purple;
-    }
-    @media #{$bp-large} {
-        // background: green;
-    }
-    @media #{$bp-x-large} {
-        // background: yellow;
-    }
 }
 
 main {
