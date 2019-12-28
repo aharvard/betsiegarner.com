@@ -1,18 +1,19 @@
 {% extends "inner.njk" %}
 
 {% block main %}
-  <main>
-    <h1 class="page-title">
-      {{ title }}
-    </h1>
-    {{ collections.all | eleventyNavigation("portfolio") | eleventyNavigationToHtml({
-        listClass: "",
+  <main class="portfolio-detail">
+    <aside class="portfolio-aside">
+      {{ collections.all | eleventyNavigation("portfolio") | eleventyNavigationToHtml({
+        listClass: "portfolio-nav",
         listItemClass: "",
-        anchorClass: "",
+        anchorClass: "portfolio-nav__link",
         activeListItemClass: "",
-        activeAnchorClass: "",
+        activeAnchorClass: "portfolio-nav__link--active",
         activeKey: eleventyNavigation.key
       }) | safe }}
-    {{ content | safe }}
+    </aside>
+    <div class="portfolio-content">
+      {{ content | safe }}
+    </div>
   </main>
 {% endblock %}

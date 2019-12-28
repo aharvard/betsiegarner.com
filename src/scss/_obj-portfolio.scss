@@ -1,0 +1,90 @@
+.portfolio-detail {
+    // display: flex;
+
+    section + section {
+        margin-top: 4rem;
+    }
+}
+
+.portfolio-aside {
+    display: none;
+}
+
+.portfolio-content {
+}
+
+.portfolio-intro {
+    margin-bottom: 4rem;
+
+    .page-title {
+        margin-bottom: 1rem;
+    }
+}
+
+.portfolio-section {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 1rem 3rem;
+    max-width: 55rem;
+    margin: 0 auto;
+    > * {
+        grid-column: 2 / -1;
+    }
+}
+
+.section-number__box {
+    font-size: 2rem;
+    display: grid;
+    place-content: center;
+    background: $black;
+    color: white;
+    height: 1.5em;
+    width: 1.5em;
+    font-family: $font-family-bold;
+    grid-column: 1 / 1;
+    margin-top: 1rem;
+}
+.section-number__text {
+    line-height: 1;
+    transform: translateY(0.05em);
+    @include windows-nudge;
+}
+
+.portfolio-blurb {
+    // font-size: 1.25rem;
+    // line-height: 1.25;
+    margin-top: 0;
+}
+
+.section-title {
+    font-size: 3rem;
+    line-height: 1.2;
+    font-family: $font-family-italic;
+    max-width: 35ch;
+    letter-spacing: -0.05em;
+}
+
+.section-blurb {
+    // font-family: $font-family-bold;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin: 1rem 0;
+}
+
+.section-heading {
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    margin-top: 2rem;
+    margin-left: -1rem;
+}
+
+.ingredients {
+    margin-top: 2rem;
+    * {
+        font-size: 0.85rem;
+    }
+    p + h3 {
+        margin-top: 1rem;
+    }
+}
