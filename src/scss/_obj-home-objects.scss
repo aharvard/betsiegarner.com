@@ -107,6 +107,11 @@
     .home-card__link-text {
         transition: inherit;
         outline: 1px solid;
+
+        .windows & {
+            position: relative;
+            top: -10px;
+        }
     }
 
     &:hover,
