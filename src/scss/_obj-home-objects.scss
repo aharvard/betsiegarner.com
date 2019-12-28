@@ -69,10 +69,7 @@
     .home-title__span {
         display: block;
 
-        .windows & {
-            position: relative;
-            top: -0.1em;
-        }
+        @include windows-nudge;
 
         &:first-child {
             @media #{$bp-large}, #{$bp-x-large} {
@@ -112,10 +109,7 @@
     .home-card__link-text {
         transition: inherit;
 
-        .windows & {
-            position: relative;
-            top: -0.1em;
-        }
+        @include windows-nudge;
     }
 
     &:hover,
