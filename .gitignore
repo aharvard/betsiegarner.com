@@ -3,4 +3,3 @@ node_modules/*
 _site/*
 package-lock.json
 dist/*
-src/_includes/main.css
