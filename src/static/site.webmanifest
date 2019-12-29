@@ -1,0 +1,19 @@
+{
+    "name": "Betsie Garner",
+    "short_name": "Betise Garner",
+    "icons": [
+        {
+            "src": "/static/favicon-196x196.png",
+            "sizes": "196x196",
+            "type": "image/png"
+        },
+        {
+            "src": "/static/mstile-310-310.png",
+            "sizes": "310x310",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone"
+}

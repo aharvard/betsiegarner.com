@@ -1,3 +1,5 @@
+{% set siteTitle = "Betsie Garner" %}
+
 {% macro myNav(navClass="my-nav", links) %}
   <nav class="nav {{navClass}}">
     <ul class="nav__list">
@@ -19,9 +21,45 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- meta -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Betsie Garner :: {{ title }}</title>
+    <title>{{siteTitle}} :: {{ title }}</title>
+    <meta name="title" content="{{siteTitle}} :: {{ title }}" />
+    <meta name="description" content="{{ metaDescription }}"/>
+    <link rel="manifest" href="/static/site.webmanifest" />
+    <!-- favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/static/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/static/apple-touch-icon-114x114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/static/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/static/apple-touch-icon-144x144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/static/apple-touch-icon-60x60.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/static/apple-touch-icon-120x120.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/static/apple-touch-icon-76x76.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/static/apple-touch-icon-152x152.png"/>
+    <link rel="icon" type="image/png" href="/static/favicon-196x196.png" sizes="196x196"/>
+    <link rel="icon" type="image/png" href="/static/favicon-96x96.png" sizes="96x96"/>
+    <link rel="icon" type="image/png" href="/static/favicon-32x32.png" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="/static/favicon-16x16.png" sizes="16x16"/>
+    <link rel="icon" type="image/png" href="/static/favicon-128.png" sizes="128x128"/>
+    <!-- theming -->
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#333333" />
+    <meta name="apple-mobile-web-app-title" content="{{siteTitle}}" />
+    <meta name="application-name" content="{{siteTitle}}" />
+    <meta name="msapplication-TileColor" content="#333333" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- facebook open graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://betsiegarner.com/" />
+    <meta property="og:title" content="{{siteTitle}}" />
+    <meta property="og:site_name" content="{{siteTitle}}" />
+    <meta property="og:description" content="{{ metaDescription }}" />
+    <meta property="og:image" content="https://betsiegarner.com/static/og-image.jpg" />
+    <!-- twitter card tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@aharvard" />
+    <meta name="twitter:image:alt"content="Betise Garner's Headshot"/>
+    <!-- Style -->
     <link rel="stylesheet" type="text/css" href="/static/fonts.css">
     <style>
       {% include "main.css" %}
