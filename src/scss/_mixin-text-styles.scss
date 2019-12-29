@@ -6,7 +6,8 @@
 }
 
 @mixin text-display-1 {
-    font-size: 4rem;
+    font-family: $font-family-regular;
+    font-size: 7rem;
     letter-spacing: -0.02em;
 }
 
@@ -21,6 +22,14 @@
     font-family: $font-family-bold;
     text-transform: uppercase;
     font-size: 1.25rem;
+    letter-spacing: 0.05em;
+}
+
+@mixin text-heading-2 {
+    font-family: $font-family-regular;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    letter-spacing: 0.05em;
 }
 
 @mixin text-body-1 {
