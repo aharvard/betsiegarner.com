@@ -114,13 +114,13 @@
 
     &:hover,
     &:focus {
-        opacity: 0.9;
+        background: $darkSchoolColor;
         .home-card__link-text {
             transform: scale(0.8);
         }
     }
 
-    &[href="/portfolio/"] {
+    &[href*="portfolio"] {
         font-family: $font-family-italic;
         line-height: 0.9;
         align-items: center;

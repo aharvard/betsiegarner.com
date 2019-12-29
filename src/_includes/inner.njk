@@ -1,7 +1,7 @@
 {% extends "base.njk" %}
 
 {% block header %}
-  <header>
+  <header class="header">
     <a class="header-title" href="/" aria-label="Betsie Garner">
       <span class="header-title__span">
         <span class="header-title__first-letter">B</span>etsie </span>
@@ -9,16 +9,13 @@
         <span class="header-title__first-letter">G</span>arner</a>
     </span>
   </span>
-  <nav>
-    {{ collections.all | eleventyNavigation("main") | eleventyNavigationToHtml({
-        listClass: "nav__list",
-        listItemClass: "nav__list-item",
-        anchorClass: "nav__link",
-        activeListItemClass: "nav__list-item--active",
-        activeAnchorClass: "nav__link--active",
-        activeKey: eleventyNavigation.key
-      }) | safe }}
-  </nav>
+
+  {{myNav(navClass="nav--header",[
+      {text: "Bio", url: "/bio/"},
+      {text: "Portfolio", url: "/portfolio/research"},
+      {text: "CV", url: "/cv/"}
+    ])}}
+
 </header>
 {% endblock %}
 

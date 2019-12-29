@@ -1,10 +1,7 @@
 ---
 layout: portfolio-detail.njk
 title: Research
-eleventyNavigation:
-  key: research
-  order: 2
-  parent: portfolio
+portfolioNavActive: true
 ---
 
 {% macro portfolioSection(number, title, date = "0000", details) %}
@@ -48,7 +45,7 @@ eleventyNavigation:
 {% call portfolioSection(
   number="1", 
   title="Interview Study of Gendered Approaches to Work-Family Balance", 
-  date="2010-2011",  
+  date="2010-2012",  
   details=[
     {
       title: "dissemination", 

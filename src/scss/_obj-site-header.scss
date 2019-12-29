@@ -1,16 +1,24 @@
-header {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     @include site-width;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+
+    @media #{$bp-x-small} {
+        flex-direction: column;
+    }
 }
 
 .header-title {
     text-transform: uppercase;
     font-family: $font-family-bold;
     text-decoration: none;
+    color: $black;
+    padding: 2rem 0;
+    &:hover,
+    &:focus {
+        color: $darkSchoolColor;
+    }
 }
 
 .header-title__span {
@@ -20,40 +28,4 @@ header {
 
 .header-title__first-letter {
     font-size: 1.2em;
-}
-
-.nav__list {
-    max-width: 64rem;
-    margin: 0 auto;
-    // padding: 1rem 2rem;
-    display: flex;
-    justify-content: flex-end;
-    @media (max-width: #{$medium}) {
-        padding: 1rem;
-    }
-}
-
-.nav__list-item {
-    // hide descendant items
-    ul {
-        display: none;
-    }
-}
-
-.nav__link {
-    font-family: $font-family-bold;
-    margin-left: 0.5em;
-    flex: 0 0 auto;
-    text-decoration: none;
-    padding: 0.25em;
-    line-height: 1;
-    @include windows-nudge;
-
-    &:hover,
-    &:focus {
-    }
-
-    &.nav__link--active {
-        color: red;
-    }
 }

@@ -1,17 +1,14 @@
 {% extends "inner.njk" %}
 
 {% block main %}
-  <aside class="portfolio-aside">
-    {{ collections.all | eleventyNavigation("portfolio") | eleventyNavigationToHtml({
-        listClass: "portfolio-nav",
-        listItemClass: "",
-        anchorClass: "portfolio-nav__link",
-        activeListItemClass: "",
-        activeAnchorClass: "portfolio-nav__link--active",
-        activeKey: eleventyNavigation.key
-      }) | safe }}
-  </aside>
+
   <main class="portfolio">
+    {{myNav(navClass="nav--portfolio",[
+    {text: "Research", url: "/portfolio/research/"},
+    {text: "Teaching", url: "/portfolio/teaching/"},
+    {text: "Service", url: "/portfolio/service/"}
+  ])}}
+
     <div class="portfolio-content">
       {{ content | safe }}
     </div>
