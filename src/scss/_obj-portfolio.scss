@@ -8,8 +8,9 @@
 }
 
 .portfolio-intro {
-}
-.portfolio-blurb {
+    .page-blurb {
+        margin-bottom: 2rem;
+    }
 }
 
 .portfolio-section {
@@ -45,7 +46,7 @@
     font-family: $font-family-bold;
     grid-column: 1 / 1;
     grid-row-start: 1;
-    transform: translateY(-0.15em);
+    transform: translateY(-0.25em);
 }
 .section-number__text {
     line-height: 1;
@@ -117,8 +118,11 @@
 
 .section-anchor-list {
     margin-top: 2rem;
+    list-style-type: decimal;
+    margin-left: 1.5rem;
 }
 .section-anchor-list__item {
+    padding-left: 1rem;
     & + & {
         margin-top: 1rem;
     }

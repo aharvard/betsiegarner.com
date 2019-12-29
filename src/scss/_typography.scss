@@ -4,15 +4,12 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $font-family-bold;
-    font-size: 1rem;
-    line-height: 1;
+    @include text-heading-2;
 }
 
 p {
     white-space: pre-wrap;
     line-height: 1.75;
-    // max-width: 70ch;
 
     & + & {
         margin-top: 2em;
@@ -38,6 +35,7 @@ main {
 
 a {
     color: $dark-accent-color;
+    transition: all 250ms ease;
 
     &:hover,
     &:focus {

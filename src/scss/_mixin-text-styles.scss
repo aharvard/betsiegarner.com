@@ -10,6 +10,7 @@
     font-size: 7rem;
     letter-spacing: -0.02em;
     transform: translateX(-0.05em);
+    text-transform: initial;
 
     @media #{$bp-small} {
         font-size: 5.5rem;
@@ -23,6 +24,7 @@
     font-size: 3rem;
     line-height: 1.2;
     font-family: $font-family-italic;
+    text-transform: initial;
     letter-spacing: -0.05em;
 
     @media #{$bp-small}, #{$bp-x-small} {

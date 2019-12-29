@@ -1,7 +1,7 @@
 .header {
     background: $gray;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    // padding-top: 1rem;
+    // padding-bottom: 1rem;
 
     .site-width {
         display: flex;
@@ -32,4 +32,8 @@
 
 .header-title__first-letter {
     font-size: 1.2em;
+}
+
+.header__portfolio-nav {
+    border-bottom: $border;
 }
