@@ -92,7 +92,7 @@
     overflow: hidden;
     text-align: center;
     text-decoration: none;
-    transition: transform 250ms ease;
+    transition: all 250ms ease;
     height: 1.6667em;
     width: 1.6667em;
 
@@ -108,13 +108,13 @@
 
     .home-card__link-text {
         transition: inherit;
-
         @include windows-nudge;
     }
 
     &:hover,
     &:focus {
-        background: $darkSchoolColor;
+        background: $dark-accent-color;
+        color: white;
         .home-card__link-text {
             transform: scale(0.8);
         }

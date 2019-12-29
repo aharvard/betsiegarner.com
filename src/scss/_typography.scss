@@ -37,11 +37,16 @@ main {
 }
 
 a {
-    color: $black;
-    color: $darkSchoolColor;
+    color: $dark-accent-color;
+
+    &:hover,
+    &:focus {
+        color: $black;
+    }
 }
 
-em {
+em,
+.em {
     font-family: $font-family-italic;
 }
 

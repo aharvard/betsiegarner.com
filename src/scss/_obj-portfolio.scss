@@ -2,21 +2,18 @@
 }
 
 .portfolio-aside {
-    // display: none;
 }
 
 .portfolio-content {
 }
 
 .portfolio-intro {
-    // margin-bottom: 4rem;
 }
 .portfolio-blurb {
 }
 
 .portfolio-section {
     display: grid;
-    // grid-template-columns: auto 1fr 12rem;
     grid-template-columns: auto 1fr;
     grid-gap: 1rem 2rem;
     margin-top: 8rem;
@@ -49,7 +46,6 @@
     grid-column: 1 / 1;
     margin-top: 0.25rem;
     grid-row-start: 1;
-    // margin-bottom: 2rem;
 }
 .section-number__text {
     line-height: 1;
@@ -61,7 +57,6 @@
     @include text-heading-1;
     margin: 0;
     line-height: 1;
-    // grid-row-start: 2;
 }
 
 .section-title {
@@ -70,9 +65,6 @@
 }
 
 .section-body {
-    // margin: 0;
-    // grid-column: 2 / 3;
-    // grid-row-start: 3;
     max-width: $medium;
 }
 .section-details {
@@ -87,24 +79,30 @@
 .section-details__items {
     margin-top: 2rem;
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 .section-details__item {
     grid-row: 1;
     padding-right: 1rem;
+
+    * {
+        display: block;
+    }
+
+    * + * {
+        margin-top: 1rem;
+    }
 }
 
 .section-detail__title {
-    margin-bottom: 0.4em;
     font-size: 0.9rem;
     font-family: $font-family-bold;
     text-transform: capitalize;
 }
 
 .section-detail__description {
-    // grid-column: 2 / 3;
     font-size: 0.9rem;
     line-height: 1.5;
-    margin-bottom: 1.25rem;
     max-width: 55ch;
 }
 
