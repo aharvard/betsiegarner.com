@@ -23,7 +23,9 @@ projectThree: Ethnography of Children’s Gender Socialization in Zoos
         {% for detail in details %}
           <div class="section-details__item">
             <h3 class="section-detail__title" aria-label="Project {{number}} {{detail.title}}">{{detail.title}}</h3>
-            <p class="section-detail__description">{{detail.description | safe}}</p>
+            {% for item in detail.description %}
+              <p class="section-detail__description">{{ item | safe}}</p>
+            {% endfor %}
           </div>
         {% endfor %}
       </div>
@@ -53,13 +55,13 @@ projectThree: Ethnography of Children’s Gender Socialization in Zoos
 {% call portfolioSection(number = "1", title = projectOne, date = "2010-2012", details = [
   {
     title: "dissemination",
-    description: '<a target="_blank" href="https://www.dropbox.com/s/mopdg7v0jogiuyj/2012%20WFRN%20Conference%20Program.pdf?dl=0">2012 Work and Family Researchers Network Conference</a>'
+    description: ['<a target="_blank" href="https://www.dropbox.com/s/mopdg7v0jogiuyj/2012%20WFRN%20Conference%20Program.pdf?dl=0">2012 Work and Family Researchers Network Conference</a>']
   }, {
     title: "publication",
-    description: '<a target="_blank" href="https://etd.library.emory.edu/concern/etds/3n203z49c">Emory Theses and Dissertations Repository</a>'
+    description: ['<a target="_blank" href="https://etd.library.emory.edu/concern/etds/3n203z49c">Emory Theses and Dissertations Repository</a>']
   }, {
     title: "recognition",
-    description: "Highest Honors by the Emory College Honors Committee"
+    description: ["Highest Honors by the Emory College Honors Committee"]
   }
 
 ]) %}
@@ -81,15 +83,14 @@ projectThree: Ethnography of Children’s Gender Socialization in Zoos
 {% call portfolioSection(number = "2", title = projectTwo, date = "2011-2015", details = [
   {
     title: "funding",
-    description: "Gertrude and Otto Pollak Summer Research Fellowship"
+    description: ["Gertrude and Otto Pollak Summer Research Fellowship"]
   }, {
     title: "dissemination",
-    description: '<a target="_blank" href="https://www.dropbox.com/s/37wo87y5cfi39ql/2013%20ASA%20Annual%20Meeting%20Program.pdf?dl=0">2013 American Sociological Association Annual Meeting</a><a target="_blank" href="https://www.dropbox.com/s/tqba0avxrcq73w3/2014%20ESS%20Annual%20Meeting%20Program.pdf?dl=0">2014 Eastern Sociological Society Annual Meeting</a>'
+    description: ['<a target="_blank" href="https://www.dropbox.com/s/37wo87y5cfi39ql/2013%20ASA%20Annual%20Meeting%20Program.pdf?dl=0">2013 American Sociological Association Annual Meeting</a>', '<a target="_blank" href="https://www.dropbox.com/s/tqba0avxrcq73w3/2014%20ESS%20Annual%20Meeting%20Program.pdf?dl=0">2014 Eastern Sociological Society Annual Meeting</a>']
   }, {
     title: "publication",
-    description: '<a target="_blank" href="https://doi.org/10.1007/s11133-015-9310-7"><em>Qualitative Sociology</em></a>'
+    description: ['<a target="_blank" href="https://doi.org/10.1007/s11133-015-9310-7"><cite>Qualitative Sociology</cite></a>']
   }
-
 ]) %}
 
 <p>When I moved to Philadelphia to attend graduate school at the <a href="">University of Pennsylvania</a>, I spent a lot of my free time visiting the city’s many world-class museums.  I was struck by the interactive design of the exhibits and marveled at how children appeared to relish learning through play.</p>
@@ -106,20 +107,34 @@ projectThree: Ethnography of Children’s Gender Socialization in Zoos
 
 {% endcall %}
 
-{% call portfolioSection(number = "3", title = projectThree, date = "0000", details = [
+{% call portfolioSection(number = "3", title = projectThree, date = "2013-2016", details = [
   {
-    title: "Lorem",
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit'
+    title: "collaborators",
+    description: [
+      'David Grazian, co-author',
+      'Marlena Mattei, field observer',
+      'Lauren Springer, field observer'
+    ]
+  },
+  {
+    title: "dissemination",
+    description: ['<a href="https://www.dropbox.com/s/py0qc1skw636ph8/2014%20ASA%20Annual%20Meeting.pdf?dl=0">2014 American Sociological Association Annual Meeting</a>']
   }, {
-    title: "Lorem",
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit'
+    title: "publication",
+    description: ['<a href="https://doi.org/10.1177/0190272516656620"><cite>Social Psychology Quarterly</cite></a>']
   }, {
-    title: "Lorem",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit"
+    title: "recognition",
+    description: ['<span><a href="https://www.asanet.org/asa-communities/asa-sections/current-sections/animals-and-society/section-animals-and-society-past-award-recipients">Award for Distinguished Scholarship</a> from the Animals and Society Section of the American Sociological Association</span>']
   }
-
+ 
 ]) %}
 
-<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta sequi beatae non repellat et explicabo id quia repellendus, quidem tempore animi ex, illum quod laudantium consectetur rerum aliquam, accusamus voluptatum.</p>
+<p>During my time in graduate school I had the opportunity to collaborate with Associate Professor of Sociology David Grazian on a topic reflecting the intersection of our respective research interests.  Dave was working on a larger book project about the culture of nature in American zoos, and he hired me to work as a research assistant helping to collect and analyze data.  Given my own interest in family leisure, the two of us agreed that I could take the lead on planning a co-authored paper about parenting at the zoo.</p>
+
+<p>The data for our paper was collected through 100+ hours of public observation at an urban zoo, conducted by a research team that included me and two other students.  Members of the research team were stationed at individual exhibits and observed how families with children responded to animal displays and interacted with one another.  Each of the three field observers wrote up detailed field notes which were all coded and analyzed by Dave and me using MAXQDA.</p>
+
+<p>The theme of childhood gender socialization emerged early in the project as we observed parents to naturalize cultures of human gender difference by referencing the biological determinism of non-human animal species.  Scholars had long-bemoaned the stubborn appeal of natural explanations for social phenomenon, but sociologists had yet to identify how socialization results in a worldview that so frequently mistakes gender differences as natural rather than cultural.</p>
+
+<p>Our work illustrates how parents teach children to associate cultural gender differences between men and women, boys and girls with zoo animals that appear to inhabit the natural living world.  This opens up new avenues for research on how anthropomorphized representations of non-human species in popular culture contribute to the widespread misconception that human gender differences are explained by biological, rather than social, causes.</p>
 
 {% endcall %}

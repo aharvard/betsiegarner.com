@@ -78,19 +78,13 @@
 
 .section-details__items {
     margin-top: 2rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
 }
 .section-details__item {
-    grid-row: 1;
-    padding-right: 1rem;
+    flex: 1 1 25%;
 
-    * {
-        display: block;
-    }
-
-    * + * {
-        margin-top: 1rem;
+    & + & {
+        margin-left: 1rem;
     }
 }
 
@@ -104,6 +98,10 @@
     font-size: 0.9rem;
     line-height: 1.5;
     max-width: 55ch;
+
+    & + & {
+        margin-top: 0.75rem;
+    }
 }
 
 .section-anchor-list {

@@ -1,7 +1,8 @@
 main {
+    @include site-width;
     margin: 0 auto;
     max-width: $large;
-    padding-top: 2rem;
+    padding-bottom: 4rem;
     min-height: 100vh;
 
     &.bio {
