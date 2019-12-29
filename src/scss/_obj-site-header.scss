@@ -1,7 +1,6 @@
 .header {
     background: $gray;
-    // padding-top: 1rem;
-    // padding-bottom: 1rem;
+    overflow: hidden;
 
     .site-width {
         display: flex;
@@ -11,6 +10,10 @@
             flex-direction: column;
         }
     }
+
+    .nav {
+        margin-top: 1rem;
+    }
 }
 
 .header-title {
@@ -18,7 +21,8 @@
     font-family: $font-family-bold;
     text-decoration: none;
     color: $black;
-    // padding: 2rem 0;
+    transform-origin: left 45%;
+
     &:hover,
     &:focus {
         color: $dark-accent-color;
@@ -36,4 +40,5 @@
 
 .header__portfolio-nav {
     border-bottom: $border;
+    padding: 1rem 0;
 }
