@@ -6,11 +6,9 @@
 html {
     font-size: 100%;
     scroll-behavior: smooth;
-
     @media (prefers-reduced-motion: reduce) {
         scroll-behavior: auto;
     }
-
     @media #{$bp-x-small} {
         // background: red;
         font-size: 80%;
@@ -23,11 +21,11 @@ html {
         // background: purple;
         font-size: 95%;
     }
-    @media #{$bp-large} {
-        // background: green;
-    }
     @media #{$bp-x-large} {
         // background: yellow;
+    }
+    @media #{$bp-large} {
+        // background: green;
     }
 }
 
@@ -37,4 +35,9 @@ body {
     font-family: $font-family-regular;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
+}
+
+*:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba($dark-accent-color, 0.5);
 }

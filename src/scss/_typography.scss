@@ -55,6 +55,10 @@ cite,
     margin-top: 8rem;
     margin-bottom: 2rem;
 
+    @media #{$bp-small}, #{$bp-x-small} {
+        margin-top: 3rem;
+    }
+
     .cv & {
         margin-bottom: 4rem;
     }

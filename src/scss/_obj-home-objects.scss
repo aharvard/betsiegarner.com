@@ -12,7 +12,8 @@
 
     @media #{$bp-x-small}, #{$bp-small}, #{$bp-medium} {
         flex-direction: column;
-        padding: 3rem 1rem;
+        padding: 20vh 1rem;
+        justify-content: flex-start;
 
         * {
             flex: 0 0 auto;
@@ -95,6 +96,7 @@
     transition: all 250ms ease;
     height: 1.6667em;
     width: 1.6667em;
+    border-radius: $border-radius;
 
     @media #{$bp-large} {
         font-size: 4.25rem;
@@ -115,8 +117,14 @@
     &:focus {
         background: $dark-accent-color;
         color: white;
+        @media (hover: none) {
+            background: $black;
+        }
         .home-card__link-text {
             transform: scale(0.8);
+            @media (hover: none) {
+                transform: none;
+            }
         }
     }
 

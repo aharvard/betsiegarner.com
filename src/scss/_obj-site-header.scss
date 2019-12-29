@@ -27,6 +27,10 @@
     &:focus {
         color: $dark-accent-color;
     }
+
+    @media #{$bp-x-small} {
+        padding: 1rem 0 0;
+    }
 }
 
 .header-title__span {

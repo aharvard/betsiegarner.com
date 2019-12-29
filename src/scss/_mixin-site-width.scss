@@ -6,4 +6,8 @@
     @media (max-width: #{$medium}) {
         padding: 0 1.5rem;
     }
+
+    @media (max-width: 330px) {
+        padding: 0 1rem;
+    }
 }
