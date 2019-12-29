@@ -45,13 +45,16 @@ a.nav__link--active {
         color: $dark-accent-color;
     }
     .nav--header & {
-        color: white;
+        // color: white;
         &:hover,
         &:focus {
-            color: $gray;
+            // color: $gray;
         }
     }
 }
 .nav__link--active {
     color: $dark-accent-color;
+    .nav--header & {
+        color: $black;
+    }
 }

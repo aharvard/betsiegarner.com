@@ -1,5 +1,5 @@
 .header {
-    background: $black;
+    background: $gray;
     padding-top: 1rem;
     padding-bottom: 1rem;
 
@@ -17,11 +17,11 @@
     text-transform: uppercase;
     font-family: $font-family-bold;
     text-decoration: none;
-    color: white;
+    color: $black;
     // padding: 2rem 0;
     &:hover,
     &:focus {
-        color: $gray;
+        color: $dark-accent-color;
     }
 }
 
