@@ -5,6 +5,7 @@
 }
 
 .nav--portfolio {
+    margin-top: 3rem;
     margin-bottom: 4rem;
 }
 
@@ -25,7 +26,7 @@ a.nav__link--active {
 }
 
 .nav__link {
-    font-family: $font-family-bold;
+    font-family: $font-family-regular;
     flex: 0 0 auto;
     text-decoration: none;
     padding: 0.25em 0;
