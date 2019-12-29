@@ -34,22 +34,26 @@
     font-family: "CenturySchoolbookBold";
     src: url("webfonts/3AC19A_0_0.eot");
     src: url("webfonts/3AC19A_0_0.eot?#iefix") format("embedded-opentype"), url("webfonts/3AC19A_0_0.woff2") format("woff2"), url("webfonts/3AC19A_0_0.woff") format("woff"), url("webfonts/3AC19A_0_0.ttf") format("truetype");
+    font-display: swap;
 }
 
 @font-face {
     font-family: "CenturySchoolbookBoldItalic";
     src: url("webfonts/3AC19A_1_0.eot");
     src: url("webfonts/3AC19A_1_0.eot?#iefix") format("embedded-opentype"), url("webfonts/3AC19A_1_0.woff2") format("woff2"), url("webfonts/3AC19A_1_0.woff") format("woff"), url("webfonts/3AC19A_1_0.ttf") format("truetype");
+    font-display: swap;
 }
 
 @font-face {
     font-family: "CenturySchoolbookItalic";
     src: url("webfonts/3AC19A_2_0.eot");
     src: url("webfonts/3AC19A_2_0.eot?#iefix") format("embedded-opentype"), url("webfonts/3AC19A_2_0.woff2") format("woff2"), url("webfonts/3AC19A_2_0.woff") format("woff"), url("webfonts/3AC19A_2_0.ttf") format("truetype");
+    font-display: swap;
 }
 
 @font-face {
     font-family: "CenturySchoolbook";
     src: url("webfonts/3AC19A_3_0.eot");
     src: url("webfonts/3AC19A_3_0.eot?#iefix") format("embedded-opentype"), url("webfonts/3AC19A_3_0.woff2") format("woff2"), url("webfonts/3AC19A_3_0.woff") format("woff"), url("webfonts/3AC19A_3_0.ttf") format("truetype");
+    font-display: swap;
 }
