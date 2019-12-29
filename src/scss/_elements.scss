@@ -5,6 +5,12 @@
 
 html {
     font-size: 100%;
+    scroll-behavior: smooth;
+
+    @media (prefers-reduced-motion: reduce) {
+        scroll-behavior: auto;
+    }
+
     @media #{$bp-x-small} {
         // background: red;
         font-size: 80%;

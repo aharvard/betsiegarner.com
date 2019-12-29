@@ -108,23 +108,14 @@
     max-width: 55ch;
 }
 
-.portfolio-children {
-    margin: 4rem 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 10rem;
-    grid-gap: 1rem;
+.section-anchor-list {
+    margin-top: 2rem;
 }
-.portfolio-link {
-    display: block;
-    background: $black;
-    color: white;
-    height: 100%;
-    display: grid;
-    place-items: center;
-    text-decoration: none;
-    @include text-display-1;
+.section-anchor-list__item {
+    & + & {
+        margin-top: 1rem;
+    }
 }
-.portfolio-link--active {
-    background: red;
+
+.section-anchor-list__link {
 }
