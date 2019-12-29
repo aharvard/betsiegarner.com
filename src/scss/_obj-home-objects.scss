@@ -69,7 +69,6 @@
 
     .home-title__span {
         display: block;
-
         @include windows-nudge;
 
         &:first-child {

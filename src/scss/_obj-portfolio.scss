@@ -104,15 +104,16 @@
     font-size: 0.9rem;
     font-family: $font-family-bold;
     text-transform: capitalize;
+    margin-bottom: 0.75rem;
 }
 
 .section-detail__description {
     font-size: 0.9rem;
-    line-height: 1.5;
+    line-height: 1.35;
     max-width: 55ch;
 
     & + & {
-        margin-top: 0.25rem;
+        margin-top: 0.75rem;
     }
 }
 
