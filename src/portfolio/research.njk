@@ -19,7 +19,7 @@ projectThree: Ethnography of Children’s Gender Socialization in Zoos
       {{ caller() }}
     </div>
     <div class="section-details">
-      <div class="section-details__items">
+      <div class="section-details__items section-details__items--{{details.length}}">
         {% for detail in details %}
           <div class="section-details__item">
             <h3 class="section-detail__title" aria-label="Project {{number}} {{detail.title}}">{{detail.title}}</h3>

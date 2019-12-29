@@ -2,7 +2,7 @@ main {
     @include site-width;
     margin: 0 auto;
     max-width: $large;
-    padding-bottom: 4rem;
+    margin-bottom: 4rem;
     min-height: 100vh;
 
     &.bio {

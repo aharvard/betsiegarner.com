@@ -9,6 +9,14 @@
     font-family: $font-family-regular;
     font-size: 7rem;
     letter-spacing: -0.02em;
+    transform: translateX(-0.05em);
+
+    @media #{$bp-small} {
+        font-size: 5.5rem;
+    }
+    @media #{$bp-x-small} {
+        font-size: 4rem;
+    }
 }
 
 @mixin text-display-2 {
@@ -16,6 +24,10 @@
     line-height: 1.2;
     font-family: $font-family-italic;
     letter-spacing: -0.05em;
+
+    @media #{$bp-small}, #{$bp-x-small} {
+        font-size: 2.5rem;
+    }
 }
 
 @mixin text-heading-1 {

@@ -86,7 +86,7 @@
         }
 
         @media (max-width: #{$medium}) {
-            grid-template-columns: 5rem 1fr;
+            grid-template-columns: 6rem 1fr;
         }
     }
 
@@ -145,7 +145,7 @@
             grid-row: 1 / 2;
         }
         @media (max-width: #{$medium}) {
-            grid-template-columns: 5rem 1fr;
+            grid-template-columns: 6rem 1fr;
             .institution {
                 grid-row: initial;
             }
@@ -155,7 +155,7 @@
     .cv-section--professional-development & {
         grid-template-columns: 9rem 1.5fr 1fr;
         @media (max-width: #{$medium}) {
-            grid-template-columns: 5rem 1fr;
+            grid-template-columns: 6rem 1fr;
         }
     }
 
