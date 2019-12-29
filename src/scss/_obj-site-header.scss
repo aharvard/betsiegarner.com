@@ -1,11 +1,15 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    @include site-width;
+    background: $black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 
-    @media #{$bp-x-small} {
-        flex-direction: column;
+    .site-width {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media #{$bp-x-small} {
+            flex-direction: column;
+        }
     }
 }
 
@@ -13,11 +17,11 @@
     text-transform: uppercase;
     font-family: $font-family-bold;
     text-decoration: none;
-    color: $black;
-    padding: 2rem 0;
+    color: white;
+    // padding: 2rem 0;
     &:hover,
     &:focus {
-        color: $dark-accent-color;
+        color: $gray;
     }
 }
 

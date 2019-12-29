@@ -5,7 +5,9 @@
 }
 
 .nav--portfolio {
-    margin-top: 3rem;
+    // margin-top: 3rem;
+    border-bottom: $border;
+    padding: 2rem 0;
 }
 
 a.nav__link--active {
@@ -41,6 +43,13 @@ a.nav__link--active {
     &:hover,
     &:focus {
         color: $dark-accent-color;
+    }
+    .nav--header & {
+        color: white;
+        &:hover,
+        &:focus {
+            color: $gray;
+        }
     }
 }
 .nav__link--active {

@@ -1,6 +1,6 @@
 // COLORS
 $black: #333;
-$gray: #ddd;
+$gray: #ccc;
 $light-accent-color: #fd0;
 $dark-accent-color: #2b64a0;
 
@@ -24,3 +24,6 @@ $font-family-regular: CenturySchoolbook, "Century Schoolbook", serif;
 $font-family-bold: CenturySchoolbookBold, "Century Schoolbook", serif;
 $font-family-italic: CenturySchoolbookItalic, "Century Schoolbook", serif;
 $font-family-bold-italic: CenturySchoolbookBoldItalic, "Century Schoolbook", serif;
+
+// Design Tokens
+$border: 1px solid $gray;

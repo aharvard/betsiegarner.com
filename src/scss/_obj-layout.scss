@@ -15,3 +15,7 @@ main {
     &.cv {
     }
 }
+
+.site-width {
+    @include site-width;
+}
