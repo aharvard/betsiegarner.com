@@ -3,3 +3,5 @@ node_modules/*
 _site/*
 package-lock.json
 dist/*
+src/scss/_obj-cv-section.scss
+src/_includes/main.css
