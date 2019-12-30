@@ -2,10 +2,6 @@
 .body-portfolio-detail {
     display: grid;
     grid-template-rows: auto 10rem 1fr;
-
-    @media #{$bp-x-small},#{$bp-small} {
-        grid-template-rows: auto 5rem 1fr;
-    }
 }
 
 main {

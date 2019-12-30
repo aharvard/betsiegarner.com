@@ -52,10 +52,6 @@ cite,
 
 .page-title {
     @include text-display-1;
-    margin-bottom: 5rem;
-    @media #{$bp-x-small},#{$bp-small} {
-        margin-bottom: 2rem;
-    }
 }
 
 .page-subtitle {
