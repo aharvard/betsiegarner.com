@@ -83,7 +83,6 @@
     gap: 2rem;
 }
 
-.section-details__items--4,
 .section-details__items--3 {
     grid-template-columns: repeat(3, 1fr);
     @media #{$bp-small}, #{$bp-x-small} {
@@ -91,12 +90,6 @@
     }
 }
 
-.section-details__items--4 {
-    grid-template-columns: repeat(2, 1fr);
-    @media #{$bp-small}, #{$bp-x-small} {
-        grid-template-columns: 1fr;
-    }
-}
 .section-details__items--4 {
     grid-template-columns: repeat(4, 1fr);
     @media #{$bp-small}, #{$bp-x-small} {

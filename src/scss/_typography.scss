@@ -52,7 +52,6 @@ cite,
 
 .page-title {
     @include text-display-1;
-    margin-top: 8rem;
     margin-bottom: 2rem;
 
     @media #{$bp-small}, #{$bp-x-small} {
