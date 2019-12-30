@@ -52,15 +52,6 @@ cite,
 
 .page-title {
     @include text-display-1;
-    margin-bottom: 2rem;
-
-    @media #{$bp-small}, #{$bp-x-small} {
-        margin-top: 3rem;
-    }
-
-    .cv & {
-        margin-bottom: 4rem;
-    }
 }
 
 .page-blurb {

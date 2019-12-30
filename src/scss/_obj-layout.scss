@@ -1,10 +1,16 @@
+.body-inner,
+.body-portfolio-detail {
+    display: grid;
+    grid-template-rows: auto 10rem 1fr;
+}
+
 main {
     @include site-width;
     margin: 0 auto;
     max-width: $large;
     margin-bottom: 4rem;
-    margin-top: 8rem;
     min-height: 100vh;
+    grid-row-start: 3;
 
     &.bio {
         p {
