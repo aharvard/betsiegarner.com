@@ -1,7 +1,3 @@
-.portfolio-header {
-    align-self: center;
-}
-
 .portfolio-detail {
 }
 
@@ -12,6 +8,7 @@
 }
 
 .portfolio-intro {
+    border-bottom: $border;
     // h2 {
     // @include text-heading-1;
     // text-transform: initial;
@@ -45,7 +42,7 @@
 
 .section-title {
     @include text-display-2;
-    max-width: 45rem;
+    max-width: 50rem;
     margin: 0;
 }
 

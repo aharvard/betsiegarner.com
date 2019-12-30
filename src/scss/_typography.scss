@@ -52,7 +52,7 @@ cite,
 
 .page-title {
     @include text-display-1;
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
     @media #{$bp-x-small},#{$bp-small} {
         margin-bottom: 2rem;
     }
@@ -60,7 +60,7 @@ cite,
 
 .page-subtitle {
     @include text-body-2;
-    margin-top: 0.25em;
+    // margin-top: 1rem;
 }
 
 .page-blurb {

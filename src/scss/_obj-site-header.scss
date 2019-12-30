@@ -13,6 +13,15 @@
     }
 }
 
+.portfolio-header {
+    // align-self: center;
+    margin-top: 3rem;
+    .site-width {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
 .header-title {
     text-transform: uppercase;
     font-family: $font-family-bold;
