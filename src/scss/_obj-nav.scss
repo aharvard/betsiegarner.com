@@ -17,6 +17,10 @@
         border-radius: 0.25em 0.25em 0 0;
         letter-spacing: 0.05em;
 
+        @media #{$bp-x-small},#{$bp-small} {
+            padding: 1em 0.75em;
+        }
+
         &:hover,
         &:focus {
             color: $dark-accent-color;
@@ -42,12 +46,14 @@
         display: flex;
         justify-content: flex-end;
         align-items: baseline;
+
+        @media #{$bp-x-small},#{$bp-small} {
+            // justify-content: flex-start;
+        }
     }
 
     .nav__list-item {
         text-align: center;
-        // outline: 1px solid red;
-        // flex: 0 0 5rem;
     }
 
     .nav__list-item + .nav__list-item {

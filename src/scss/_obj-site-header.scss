@@ -5,10 +5,7 @@
     .site-width {
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        @media #{$bp-x-small} {
-            flex-direction: column;
-        }
+        align-items: flex-end;
     }
 
     .nav {
@@ -21,7 +18,12 @@
     font-family: $font-family-bold;
     text-decoration: none;
     color: $black;
-    transform-origin: left 45%;
+    transform: translateY(-1.2rem);
+    @include windows-nudge;
+
+    @media #{$bp-x-small},#{$bp-small} {
+        transform: translateY(-0.75rem);
+    }
 
     &:hover,
     &:focus {

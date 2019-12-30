@@ -37,6 +37,8 @@
 
     @media #{$bp-x-small}, #{$bp-small} {
         grid-template-columns: 1fr;
+        margin-top: 2rem;
+
         > * {
             grid-column: 1 / -1;
         }
