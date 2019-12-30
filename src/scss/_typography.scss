@@ -58,6 +58,10 @@ cite,
     }
 }
 
+.page-subtitle {
+    @include text-body-1;
+}
+
 .page-blurb {
     @include text-body-1;
     max-width: 70ch;

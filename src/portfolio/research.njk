@@ -13,9 +13,6 @@ projectFour: Ethnographic Community Study of Rockdale County, GA
 
 {% macro portfolioSection(number, title, date = "0000", details) %}
   <section id="project-{{number}}" class="portfolio-section">
-    <span class="section-number__box" aria-label="project {{number}}">
-      <span class="section-number__text">{{number}}</span>
-    </span>
     <h2 class="section-title">{{title}}</h2>
     <p class="section-date">{{date}}</p>
     <div class="section-body">
@@ -39,8 +36,8 @@ projectFour: Ethnographic Community Study of Rockdale County, GA
 <div class="portfolio-intro">
   <h1 class="page-title">
     {{title}}
+    <p class="page-subtitle">An Overview of Projects</p>
   </h1>
-  <h2>An Overview of Projects</h2>
 </div>
 
 {% call portfolioSection(number = "1", title = projectOne, date = "2010-2012", details = [
