@@ -7,19 +7,14 @@
 main {
     @include site-width;
     margin: 0 auto;
+    width: 100%;
     max-width: $large;
     margin-bottom: 4rem;
     min-height: 100vh;
     grid-row-start: 3;
 
-    &.bio {
-        p {
-            max-width: $medium;
-        }
-    }
-    &.portfolio {
-    }
-    &.cv {
+    p {
+        max-width: $medium;
     }
 }
 

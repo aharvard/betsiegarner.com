@@ -52,8 +52,10 @@ cite,
 
 .page-title {
     @include text-display-1;
+    margin-bottom: 1rem;
 }
 
 .page-blurb {
     @include text-body-1;
+    max-width: 70ch;
 }
