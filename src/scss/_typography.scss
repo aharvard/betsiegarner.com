@@ -57,7 +57,7 @@ cite,
 
 .page-subtitle {
     @include text-body-2;
-    // margin-top: 1rem;
+    @include windows-nudge;
 }
 
 .page-blurb {
