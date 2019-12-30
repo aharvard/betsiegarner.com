@@ -59,7 +59,8 @@ cite,
 }
 
 .page-subtitle {
-    @include text-body-1;
+    @include text-body-2;
+    margin-top: 0.25em;
 }
 
 .page-blurb {
