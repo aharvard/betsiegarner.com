@@ -1,7 +1,7 @@
 {% extends "inner.njk" %}
 
 {% block main %}
-  <div>
+  <header class="portfolio-header">
     <div class="site-width">
       {{myNav(navClass="nav--portfolio",[
       {text: "Research", url: "/portfolio/research/"},
@@ -9,7 +9,7 @@
       {text: "Service", url: "/portfolio/service/"}
     ])}}
     </div>
-  </div>
+  </header>
   <main class="portfolio">
 
     <div class="portfolio-content">
