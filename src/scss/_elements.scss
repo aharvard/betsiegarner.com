@@ -36,8 +36,3 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
 }
-
-*:focus {
-    outline: none;
-    box-shadow: 0 0 0 4px rgba($dark-accent-color, 0.5);
-}
