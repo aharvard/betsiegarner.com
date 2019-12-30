@@ -52,6 +52,7 @@ cite,
 
 .page-title {
     @include text-display-1;
+    @include windows-nudge;
 }
 
 .page-subtitle {
