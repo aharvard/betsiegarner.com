@@ -21,3 +21,7 @@ main {
 .site-width {
     @include site-width;
 }
+
+.body-inner .page-title {
+    margin-bottom: 5rem;
+}

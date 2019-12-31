@@ -13,6 +13,15 @@
   <main class="portfolio">
 
     <div class="portfolio-content">
+      <div class="portfolio-intro">
+        <h1 class="page-title">
+          {{title}}
+        </h1>
+        {% if subtitle %}
+          <p class="page-subtitle">{{subtitle}}</p>
+        {% endif %}
+      </div>
+
       {{ content | safe }}
     </div>
   </main>

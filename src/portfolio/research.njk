@@ -1,6 +1,8 @@
 ---
 layout: portfolio-detail.njk
 title: Research
+subtitle: An Overview of Projects
+
 metaDescription: Betsie Garner is an Assistant Professor of Sociology at Tennessee Tech University.  Her research and teaching interests include topics related to family, culture, and place.  She received a PhD in Sociology from the University of Pennsylvania in 2017, an MA in Sociology from the University of Pennsylvania in 2013, and a BA in Sociology from Emory University in 2011.
 
 portfolioNavActive: true
@@ -14,90 +16,83 @@ projectFour: Ethnographic Community Study of Rockdale County, GA
 {% macro portfolioSection(number, title, date = "0000", details) %}
   <section id="project-{{number}}" class="portfolio-section">
     <h2 class="section-title">{{title}}</h2>
-    <p class="section-date">{{date}}</p>
-    <div class="section-body">
-      {{ caller() }}
-    </div>
-    <div class="section-details">
-      <div class="section-details__items section-details__items--{{details.length}}">
-        {% for detail in details %}
-          <div class="section-details__item">
-            <h3 class="section-detail__title" aria-label="Project {{number}} {{detail.title}}">{{detail.title}}</h3>
-            {% for item in detail.description %}
-              <p class="section-detail__description">{{ item | safe}}</p>
-            {% endfor %}
-          </div>
-        {% endfor %}
+      <p class="section-date">{{date}}</p>
+      <div class="section-body">
+        {{ caller() }}
       </div>
-    </div>
-  </section>
-{% endmacro %}
+      <div class="section-details">
+        <div class="section-details__items section-details__items--{{details.length}}">
+          {% for detail in details %}
+            <div class="section-details__item">
+              <h3 class="section-detail__title" aria-label="Project {{number}} {{detail.title}}">{{detail.title}}</h3>
+              {% for item in detail.description %}
+                <p class="section-detail__description">{{ item | safe}}</p>
+              {% endfor %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+  {% endmacro %}
 
-{% set linkAttrs = "target='_blank' rel='noopener'" %}
+  {% set linkAttrs = "target='_blank' rel='noopener'" %}
 
-<div class="portfolio-intro">
-  <h1 class="page-title">
-    {{title}}
-  </h1>
-  <p class="page-subtitle">An Overview of Projects</p>
-</div>
+  {% call portfolioSection(number = "1", title = projectOne, date = "2010-2012", details = [
+    {
+      title: "dissemination",
+      description: ['2012 Work and Family Researchers Network Conference']
+    }, {
+      title: "publication",
+      description: ['<a target="_blank" rel="noopener" href="https://etd.library.emory.edu/concern/etds/3n203z49c">Emory Theses and Dissertations Repository</a>']
+    }, {
+      title: "recognition",
+      description: ["Highest Honors by the Emory College Honors Committee"]
+    }
 
-{% call portfolioSection(number = "1", title = projectOne, date = "2010-2012", details = [
-  {
-    title: "dissemination",
-    description: ['2012 Work and Family Researchers Network Conference']
-  }, {
-    title: "publication",
-    description: ['<a target="_blank" rel="noopener" href="https://etd.library.emory.edu/concern/etds/3n203z49c">Emory Theses and Dissertations Repository</a>']
-  }, {
-    title: "recognition",
-    description: ["Highest Honors by the Emory College Honors Committee"]
-  }
+  ]) %}
 
-]) %}
+  <p>During my senior year at Emory University, I completed the College Honors Program in sociology.  This was my first experience conducting a professional academic study from beginning to end, including everything from research design and IRB approval to writing a thesis and presenting at a conference.</p>
 
-<p>During my senior year at Emory University, I completed the College Honors Program in sociology.  This was my first experience conducting a professional academic study from beginning to end, including everything from research design and IRB approval to writing a thesis and presenting at a conference.</p>
+  <p>My research project was inspired by an observation Gloria Steinem made in her 1984 national bestseller <a class="italic" href="https://us.macmillan.com/books/9781250204868" {{linkAttrs | safe}}>Outrageous Acts and Everyday Rebellions:</a> “I’ve yet to be on a campus where most women weren’t worrying about some aspect of combining marriage, children, and a career.  I’ve yet to find one where many men were worrying about the same thing.”</p>
 
-<p>My research project was inspired by an observation Gloria Steinem made in her 1984 national bestseller <a class="italic" href="https://us.macmillan.com/books/9781250204868" {{linkAttrs | safe}}>Outrageous Acts and Everyday Rebellions:</a> “I’ve yet to be on a campus where most women weren’t worrying about some aspect of combining marriage, children, and a career.  I’ve yet to find one where many men were worrying about the same thing.”</p>
+  <p>I was familiar with recent scholarship on gender, work, and family through my courses as an undergraduate sociology major, but most of those studies focused on the experiences of men and women who were already married and raising children.  There was very little research available on the views of contemporary young adults like my college peers.</p>
 
-<p>I was familiar with recent scholarship on gender, work, and family through my courses as an undergraduate sociology major, but most of those studies focused on the experiences of men and women who were already married and raising children.  There was very little research available on the views of contemporary young adults like my college peers.</p>
+  <p>I wanted to know if things had changed since the 1970s and 80s, so I conducted in-depth, semi-structured interviews with 20 students, 10 women and 10 men, asking them open-ended questions about their career aspirations and plans for family.  The interviews were recorded digitally and transcribed verbatim, and I used MAXQDA to analyze the data with codes generated both inductively and deductively.</p>
 
-<p>I wanted to know if things had changed since the 1970s and 80s, so I conducted in-depth, semi-structured interviews with 20 students, 10 women and 10 men, asking them open-ended questions about their career aspirations and plans for family.  The interviews were recorded digitally and transcribed verbatim, and I used MAXQDA to analyze the data with codes generated both inductively and deductively.</p>
+  <p>What I found is that gender accounts for a significant difference in how students approached the topic: women anticipated making difficult choices in order to resolve conflicts between work and family, but men imagined they would easily “have it all” without making any personal sacrifices.</p>
 
-<p>What I found is that gender accounts for a significant difference in how students approached the topic: women anticipated making difficult choices in order to resolve conflicts between work and family, but men imagined they would easily “have it all” without making any personal sacrifices.</p>
+  <p>This insight has meaningful implications for policy makers and advocates working to support parents, especially mothers, as they negotiate the competing demands of work and family.  It provides empirical evidence that college students have changed very little in their thinking about work-family balance in recent years.  It also suggests, however, that college may represent a time in the life course that is ripe for intervention, given that young adults at this point are formulating their goals but not yet committed to particular work-family arrangements.</p>
 
-<p>This insight has meaningful implications for policy makers and advocates working to support parents, especially mothers, as they negotiate the competing demands of work and family.  It provides empirical evidence that college students have changed very little in their thinking about work-family balance in recent years.  It also suggests, however, that college may represent a time in the life course that is ripe for intervention, given that young adults at this point are formulating their goals but not yet committed to particular work-family arrangements.</p>
+  {% endcall %}
 
-{% endcall %}
+  {% call portfolioSection(number = "2", title = projectTwo, date = "2011-2015", details = [
+    {
+      title: "dissemination",
+      description: ['2013 American Sociological Association Annual Meeting', '2014 Eastern Sociological Society Annual Meeting']
+    }, {
+      title: "publication",
+      description: ['<cite><a target="_blank" rel="noopener" href="https://doi.org/10.1007/s11133-015-9310-7">Qualitative Sociology</a></cite>']
+    }, {
+      title: "funding",
+      description: ["A Gertrude and Otto Pollak Summer Research Fellowship from the Sociology Department at the University of Pennsylvania"]
+    }
+  ]) %}
 
-{% call portfolioSection(number = "2", title = projectTwo, date = "2011-2015", details = [
-  {
-    title: "dissemination",
-    description: ['2013 American Sociological Association Annual Meeting', '2014 Eastern Sociological Society Annual Meeting']
-  }, {
-    title: "publication",
-    description: ['<cite><a target="_blank" rel="noopener" href="https://doi.org/10.1007/s11133-015-9310-7">Qualitative Sociology</a></cite>']
-  }, {
-    title: "funding",
-    description: ["A Gertrude and Otto Pollak Summer Research Fellowship from the Sociology Department at the University of Pennsylvania"]
-  }
-]) %}
+  <p>When I first moved to Philadelphia to attend graduate school at the University of Pennsylvania, I spent a lot of my free time visiting the city’s many world-class museums.  I was struck by the interactive designs of the exhibits and marveled at how children appeared to relish learning through play.</p>
 
-<p>When I first moved to Philadelphia to attend graduate school at the University of Pennsylvania, I spent a lot of my free time visiting the city’s many world-class museums.  I was struck by the interactive designs of the exhibits and marveled at how children appeared to relish learning through play.</p>
+  <p>Meanwhile, I needed a topic for my master’s thesis and began to wonder about how parents experience family visits to museums.  Is it as much for the parents as it is for the kids?  The available sociological research on family had very little to say about such public contexts as museums.  Instead, it was more common for scholars to study parents and children at home or in school settings.</p>
 
-<p>Meanwhile, I needed a topic for my master’s thesis and began to wonder about how parents experience family visits to museums.  Is it as much for the parents as it is for the kids?  The available sociological research on family had very little to say about such public contexts as museums.  Instead, it was more common for scholars to study parents and children at home or in school settings.</p>
+  <p>To answer my question, I conducted 120+ hours of ethnographic fieldwork at four museum sites, using participant observation in two distinct modes.  First, I worked as a trained volunteer at one museum exhibit, which required me to lead parents and children through structured educational activities and also gave me the chance to discuss museum visits with them more generally.  Second, I visited museums as a regular patron in the company of a colleague’s young son.  Since I had no children of my own, this strategy allowed me to “<a href="https://doi.org/10.1007/s11133-009-9130-8" {{linkAttrs|safe}}>wedge</a>” my way into child-focused museum activities.</p>
 
-<p>To answer my question, I conducted 120+ hours of ethnographic fieldwork at four museum sites, using participant observation in two distinct modes.  First, I worked as a trained volunteer at one museum exhibit, which required me to lead parents and children through structured educational activities and also gave me the chance to discuss museum visits with them more generally.  Second, I visited museums as a regular patron in the company of a colleague’s young son.  Since I had no children of my own, this strategy allowed me to “<a href="https://doi.org/10.1007/s11133-009-9130-8" {{linkAttrs|safe}}>wedge</a>” my way into child-focused museum activities.</p>
+  <p>In both modes, I used a combination of direct questioning and “<a href="https://doi.org/10.1007/BF00986755" {{linkAttrs|safe}}>interviewing by comment</a>” to elicit meaningful conversation with parents.  I made jottings while still in the field and later wrote up extensive field notes at home.  Using MAXQDA, I coded and recoded successive sets of field notes in an inductive process that resulted in a refined coding scheme.</p>
 
-<p>In both modes, I used a combination of direct questioning and “<a href="https://doi.org/10.1007/BF00986755" {{linkAttrs|safe}}>interviewing by comment</a>” to elicit meaningful conversation with parents.  I made jottings while still in the field and later wrote up extensive field notes at home.  Using MAXQDA, I coded and recoded successive sets of field notes in an inductive process that resulted in a refined coding scheme.</p>
+  <p>My findings show that fathers experienced family museum visits as sentimental leisure time while mothers experienced those same visits as routine parenting work.  Fathers focused on playfully interacting with their children and romanticized museum visits as special, memorable events.  But mothers spent most of their time managing their children, as well as their husbands, and therefore rationalized museum visits as mundane and ordinary.</p>
 
-<p>My findings show that fathers experienced family museum visits as sentimental leisure time while mothers experienced those same visits as routine parenting work.  Fathers focused on playfully interacting with their children and romanticized museum visits as special, memorable events.  But mothers spent most of their time managing their children, as well as their husbands, and therefore rationalized museum visits as mundane and ordinary.</p>
+  <p>This evidence not only illustrates how gendered patterns of meaning-making pervade experiences of mothering and fathering, but also sparks an important debate about the methods typically used to measure how parents spend their time.  Data from large surveys of time-use are often analyzed using researcher-imposed codes, and at least <a href="https://www.russellsage.org/publications/changing-rhythms-american-family-life-1" {{linkAttrs|safe}}>one noteworthy study</a> categorizes family museum visits as leisure time, not work time.  By using a grounded theory approach that prioritizes parents’ own subjective experiences, I found that conventional time-diary methods likely overestimate leisure time for mothers while also obscuring from view the valuable work mothers perform during so-called family leisure activities.</p>
 
-<p>This evidence not only illustrates how gendered patterns of meaning-making pervade experiences of mothering and fathering, but also sparks an important debate about the methods typically used to measure how parents spend their time.  Data from large surveys of time-use are often analyzed using researcher-imposed codes, and at least <a href="https://www.russellsage.org/publications/changing-rhythms-american-family-life-1" {{linkAttrs|safe}}>one noteworthy study</a> categorizes family museum visits as leisure time, not work time.  By using a grounded theory approach that prioritizes parents’ own subjective experiences, I found that conventional time-diary methods likely overestimate leisure time for mothers while also obscuring from view the valuable work mothers perform during so-called family leisure activities.</p>
+  {% endcall %}
 
-{% endcall %}
-
-{% call portfolioSection(number = "3", title = projectThree, date = "2013-2016", details = [
+  {% call portfolioSection(number = "3", title = projectThree, date = "2013-2016", details = [
   {
     title: "dissemination",
     description: ['2014 American Sociological Association Annual Meeting']
@@ -109,17 +104,17 @@ projectFour: Ethnographic Community Study of Rockdale County, GA
     description: ['<span><a target="_blank" rel="noopener" href="https://www.asanet.org/asa-communities/asa-sections/current-sections/animals-and-society/section-animals-and-society-past-award-recipients">Award for Distinguished Scholarship</a> from the Animals and Society Section of the American Sociological Association</span>']
   }
 ]) %}
-<p>During my time in graduate school I had the opportunity to collaborate with Associate Professor of Sociology David Grazian on a topic reflecting the intersection of our respective research interests.  Dave was working on a larger <a href="https://press.princeton.edu/books/paperback/9780691178424/american-zoo" {{linkAttrs|safe}}>book project</a> about the culture of nature in American zoos, and he hired me to work as a research assistant helping to collect and analyze data.  Given my own interest in family leisure, the two of us agreed that I would take the lead on planning a co-authored paper about parenting at the zoo.</p>
+  <p>During my time in graduate school I had the opportunity to collaborate with Associate Professor of Sociology David Grazian on a topic reflecting the intersection of our respective research interests.  Dave was working on a larger <a href="https://press.princeton.edu/books/paperback/9780691178424/american-zoo" {{linkAttrs|safe}}>book project</a> about the culture of nature in American zoos, and he hired me to work as a research assistant helping to collect and analyze data.  Given my own interest in family leisure, the two of us agreed that I would take the lead on planning a co-authored paper about parenting at the zoo.</p>
 
-<p>The data for our paper was collected through 100+ hours of public observation at an urban zoo, conducted by a research team that included me and two other students.  Field observers watched families respond to animal displays and recorded detailed field notes, which Dave and I later analyzed using MAXQDA.</p>
+  <p>The data for our paper was collected through 100+ hours of public observation at an urban zoo, conducted by a research team that included me and two other students.  Field observers watched families respond to animal displays and recorded detailed field notes, which Dave and I later analyzed using MAXQDA.</p>
 
-<p>The theme of children’s gender socialization emerged early in the project as we observed parents projecting traditional, heteronormative cultures of human gender difference onto “wild” zoo animals.  As a socialization message to children, this association implies that socially constructed differences between men and women, boys and girls are biologically determined by the natural living world.</p>
+  <p>The theme of children’s gender socialization emerged early in the project as we observed parents projecting traditional, heteronormative cultures of human gender difference onto “wild” zoo animals.  As a socialization message to children, this association implies that socially constructed differences between men and women, boys and girls are biologically determined by the natural living world.</p>
 
-<p>Scholars have long-bemoaned the stubborn appeal of natural explanations for social phenomenon, and our work helps explain how socialization results in a worldview that so frequently mistakes gender differences as natural rather than social.  We also suggest new avenues for research on how anthropomorphized representations of non-human animal species contribute to the widespread misconception that human gender differences are explained by biological, rather than cultural, causes.</p>
+  <p>Scholars have long-bemoaned the stubborn appeal of natural explanations for social phenomenon, and our work helps explain how socialization results in a worldview that so frequently mistakes gender differences as natural rather than social.  We also suggest new avenues for research on how anthropomorphized representations of non-human animal species contribute to the widespread misconception that human gender differences are explained by biological, rather than cultural, causes.</p>
 
-{% endcall %}
+  {% endcall %}
 
-{% call portfolioSection(number = "4", title = projectFour, date = "2014-", details = [
+  {% call portfolioSection(number = "4", title = projectFour, date = "2014-", details = [
    {
     title: "dissemination",
     description: [
@@ -144,26 +139,26 @@ projectFour: Ethnographic Community Study of Rockdale County, GA
   }
 ]) %}
 
-<p>For my dissertation I chose to explore themes related to regional culture and social change in the Southern United States.  In recent decades, sociologists have produced numerous studies of nationally-representative data sets as well as countless ethnographies of neighborhoods in Northern cities.  The study of Southern communities, however, has been largely neglected.</p>
+  <p>For my dissertation I chose to explore themes related to regional culture and social change in the Southern United States.  In recent decades, sociologists have produced numerous studies of nationally-representative data sets as well as countless ethnographies of neighborhoods in Northern cities.  The study of Southern communities, however, has been largely neglected.</p>
 
-<p>Some scholars view the region’s distinctiveness as a methodological nuisance at odds with the discipline’s move toward limitless generalizability and grand theory.  My approach, in contrast, is to diversify the set of places considered worthy of sociological study.</p>
+  <p>Some scholars view the region’s distinctiveness as a methodological nuisance at odds with the discipline’s move toward limitless generalizability and grand theory.  My approach, in contrast, is to diversify the set of places considered worthy of sociological study.</p>
 
-<p>I selected Rockdale County, GA as my field site because it exhibits several key trends that distinguish the South as a unique region, including rapid growth and diversification.  Located about half an hour east of downtown Atlanta, Rockdale was historically a small, rural community of predominantly white farmers and cotton-mill workers.  The county was eventually integrated into Metro Atlanta by the installation of Interstate 20 during the 1960s, and subsequently witnessed drastic population increases and sprawling suburban development.</p>
+  <p>I selected Rockdale County, GA as my field site because it exhibits several key trends that distinguish the South as a unique region, including rapid growth and diversification.  Located about half an hour east of downtown Atlanta, Rockdale was historically a small, rural community of predominantly white farmers and cotton-mill workers.  The county was eventually integrated into Metro Atlanta by the installation of Interstate 20 during the 1960s, and subsequently witnessed drastic population increases and sprawling suburban development.</p>
 
-<p>Since 2000, Rockdale’s share of non-Hispanic whites has declined, transforming the county into a majority-minority community.  By the time I began collecting data in 2014, Rockdale’s population of nearly <a href="https://www.dropbox.com/s/tx6bf30yk2op00y/Census%20Bureau_Annual%20Estimates%20of%20the%20Resident%20Population_April%201%2C%202010%20to%20July%201%2C%202014.pdf?dl=0"{{linkAttrs|safe}}>88,000</a> featured a black majority of <a href="https://www.dropbox.com/s/l67jxnl8v9t81aq/Census%20Bureau_Annual%20Estimates%20of%20the%20Resident%20Population%20by%20Sex%2C%20Race%20Alone%20or%20in%20Combination%2C%20and%20Hispanic%20Origin%20for%20the%20United%20States%2C%20States%2C%20and%20Counties_April%201%2C%202010%20to%20July%201%2C%202014_Total.pdf?dl=0" {{linkAttrs|safe}}>52 percent</a> and <a href="https://www.dropbox.com/s/7xh02p18hd85u0y/Census%20Bureau_Annual%20Estimates%20of%20the%20Resident%20Population%20by%20Sex%2C%20Race%2C%20and%20Hispanic%20Origin%20for%20the%20United%20States%2C%20States%2C%20and%20Counties_April%201%2C%202010%20to%20July%201%2C%202014_Hispanic.pdf?dl=0" {{linkAttrs|safe}}>10 percent</a> identified as Hispanic or Latino.</p>
+  <p>Since 2000, Rockdale’s share of non-Hispanic whites has declined, transforming the county into a majority-minority community.  By the time I began collecting data in 2014, Rockdale’s population of nearly <a href="https://www.dropbox.com/s/tx6bf30yk2op00y/Census%20Bureau_Annual%20Estimates%20of%20the%20Resident%20Population_April%201%2C%202010%20to%20July%201%2C%202014.pdf?dl=0"{{linkAttrs|safe}}>88,000</a> featured a black majority of <a href="https://www.dropbox.com/s/l67jxnl8v9t81aq/Census%20Bureau_Annual%20Estimates%20of%20the%20Resident%20Population%20by%20Sex%2C%20Race%20Alone%20or%20in%20Combination%2C%20and%20Hispanic%20Origin%20for%20the%20United%20States%2C%20States%2C%20and%20Counties_April%201%2C%202010%20to%20July%201%2C%202014_Total.pdf?dl=0" {{linkAttrs|safe}}>52 percent</a> and <a href="https://www.dropbox.com/s/7xh02p18hd85u0y/Census%20Bureau_Annual%20Estimates%20of%20the%20Resident%20Population%20by%20Sex%2C%20Race%2C%20and%20Hispanic%20Origin%20for%20the%20United%20States%2C%20States%2C%20and%20Counties_April%201%2C%202010%20to%20July%201%2C%202014_Hispanic.pdf?dl=0" {{linkAttrs|safe}}>10 percent</a> identified as Hispanic or Latino.</p>
 
-<p>To collect my data, I relocated to Rockdale and completed 2.5 years of extensive ethnographic fieldwork with formal groups including government agencies, nonprofit organizations, small businesses, and churches, as well as informal gatherings of neighboring families and friends in restaurants, coffee shops, and private residences.</p>
+  <p>To collect my data, I relocated to Rockdale and completed 2.5 years of extensive ethnographic fieldwork with formal groups including government agencies, nonprofit organizations, small businesses, and churches, as well as informal gatherings of neighboring families and friends in restaurants, coffee shops, and private residences.</p>
 
-<p>This involved conducting hundreds of hours of participant observation; interviewing 60 individuals in a formal, semi-structured format; shadowing the daily lives of individuals from about 30 households; and practicing digital ethnography to observe social interactions online.  I used MAXQDA to analyze the resulting field notes and interview transcripts with a coding scheme I developed slowly as themes emerged from the data.</p>
+  <p>This involved conducting hundreds of hours of participant observation; interviewing 60 individuals in a formal, semi-structured format; shadowing the daily lives of individuals from about 30 households; and practicing digital ethnography to observe social interactions online.  I used MAXQDA to analyze the resulting field notes and interview transcripts with a coding scheme I developed slowly as themes emerged from the data.</p>
 
-<p>One major theme that emerged is how residents cope with change and respond to diversity.  I observed the majority group made up of black and white Christians use the culture of southern hospitality to create networks of reciprocity amongst themselves, while simultaneously marginalizing racial/ethnic, religious, and sexual minorities.  This finding suggests new ways of understanding the contemporary culture of Southern hospitality and its relationship to social inequality in local communities.</p>
+  <p>One major theme that emerged is how residents cope with change and respond to diversity.  I observed the majority group made up of black and white Christians use the culture of southern hospitality to create networks of reciprocity amongst themselves, while simultaneously marginalizing racial/ethnic, religious, and sexual minorities.  This finding suggests new ways of understanding the contemporary culture of Southern hospitality and its relationship to social inequality in local communities.</p>
 
-<p>Scholars commonly view postbellum Southern hospitality as mere discourse that relies on romanticized images of plantation society to promote tourism and business.  But I argue that contemporary Southern hospitality is more than a myth—it is a set of practices through which Southerners continue to negotiate the politics of belonging in their local communities.</p>
+  <p>Scholars commonly view postbellum Southern hospitality as mere discourse that relies on romanticized images of plantation society to promote tourism and business.  But I argue that contemporary Southern hospitality is more than a myth—it is a set of practices through which Southerners continue to negotiate the politics of belonging in their local communities.</p>
 
-<p>Another key theme I analyzed is the blurring of urban and rural culture in Rockdale.  Given the county’s sustained pattern of growth and development, there is little consensus among residents about how to imagine its location on the rural-urban continuum.  Indeed, residents drew on local social and symbolic resources to construct place-based identities that were alternatively urban, suburban, or rural.</p>
+  <p>Another key theme I analyzed is the blurring of urban and rural culture in Rockdale.  Given the county’s sustained pattern of growth and development, there is little consensus among residents about how to imagine its location on the rural-urban continuum.  Indeed, residents drew on local social and symbolic resources to construct place-based identities that were alternatively urban, suburban, or rural.</p>
 
-<p>This evidence calls into question the binary thinking that pervades academic and government research on rural-urban issues.  For example, the United States Census Bureau provides no definition of “suburban” and relies on a dichotomous <a href="https://www.dropbox.com/s/oola4fvxbg5fkui/Census%20Bureau_The%20Urban%20and%20Rural%20Classifications.pdf?dl=0" {{linkAttrs|safe}}>classification system</a> in which 2,500 or more inhabitants constitutes the defining difference between urban and rural places.</p>
+  <p>This evidence calls into question the binary thinking that pervades academic and government research on rural-urban issues.  For example, the United States Census Bureau provides no definition of “suburban” and relies on a dichotomous <a href="https://www.dropbox.com/s/oola4fvxbg5fkui/Census%20Bureau_The%20Urban%20and%20Rural%20Classifications.pdf?dl=0" {{linkAttrs|safe}}>classification system</a> in which 2,500 or more inhabitants constitutes the defining difference between urban and rural places.</p>
 
-<p>My research shows that ordinary people disregard official classifications and instead invest their own imagined boundaries with significant meaning.  To understand the true impact of rural-urban differences in local communities, researchers should examine how residents socially construct their own meaningful categories.</p>
+  <p>My research shows that ordinary people disregard official classifications and instead invest their own imagined boundaries with significant meaning.  To understand the true impact of rural-urban differences in local communities, researchers should examine how residents socially construct their own meaningful categories.</p>
 
-{% endcall %}
+  {% endcall %}
