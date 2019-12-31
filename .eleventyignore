@@ -1,2 +1,7 @@
 README.md
 old/
+.DS_Store
+node_modules/*
+_site/*
+package-lock.json
+dist/*
