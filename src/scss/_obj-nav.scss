@@ -54,14 +54,10 @@
 }
 
 .nav--portfolio {
-    border-top: $border;
-    padding-top: 1.5rem;
-    margin-top: 2rem;
-
     .nav__list {
         display: flex;
         align-items: baseline;
-        justify-content: space-between;
+        justify-content: flex-start;
     }
 
     .nav__list-item {
@@ -71,7 +67,7 @@
     }
 
     .nav__list-item + .nav__list-item {
-        margin-left: 3rem;
+        margin-left: 1.5rem;
     }
 
     .nav__link {

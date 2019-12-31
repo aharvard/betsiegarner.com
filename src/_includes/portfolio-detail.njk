@@ -1,16 +1,16 @@
 {% extends "inner.njk" %}
 
 {% block main %}
-  <header class="portfolio-header">
-    <div class="site-width">
+  <main class="portfolio">
+    <header class="portfolio-header">
+      {# <div class="site-width"> #}
       {{myNav(navClass="nav--portfolio",[
       {text: "Research", url: "/portfolio/research/"},
       {text: "Teaching", url: "/portfolio/teaching/"},
       {text: "Service", url: "/portfolio/service/"}
     ])}}
-    </div>
-  </header>
-  <main class="portfolio">
+      {# </div> #}
+    </header>
 
     <div class="portfolio-content">
       <div class="portfolio-intro">
