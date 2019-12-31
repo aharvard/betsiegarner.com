@@ -15,8 +15,7 @@ projectFour: Ethnographic Community Study of Rockdale County, GA
 
 {% macro portfolioSection(number, title, date = "0000", details) %}
   <section id="project-{{number}}" class="portfolio-section">
-    <h2 class="section-title" data-clipboard-text="">{{title}}</h2>
-
+    <h2 class="section-title">{{title}}</h2>
     <p class="section-date">{{date}}</p>
     <div class="section-body">
       {{ caller() }}
