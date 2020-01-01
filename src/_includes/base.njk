@@ -1,5 +1,11 @@
 {% set siteTitle = "Betsie Garner" %}
 
+{% macro fontLoader(fonts) %}
+  {% for font in fonts %}
+    <link rel="preload" href="/static/webfonts/{{font.fileName}}" as="font" crossorigin="anonymous">
+  {% endfor %}
+{% endmacro %}
+
 {% macro myNav(navClass="my-nav", links) %}
   <nav class="nav {{navClass}}">
     <ul class="nav__list">
@@ -61,6 +67,53 @@
     <meta name="twitter:image:alt"content="Betise Garner's Headshot"/>
     <!-- Style -->
     <link rel="stylesheet" type="text/css" href="/static/fonts.css">
+    <link rel="preload" href="/static/fonts.css" as="style">
+    <!-- Fonts -->
+    <!-- Century Schoolbook Bold-->
+    {{fontLoader( fonts =[
+      {fileName: "3AC19A_0_0.woff2"}
+    ])}}
+    <!-- Century Schoolbook Bold Italic-->
+    {{fontLoader( fonts =[
+      {fileName: "3AC19A_1_0.woff2"}
+    ])}}
+    <!-- Century Schoolbook Italic-->
+    {{fontLoader( fonts =[
+      {fileName: "3AC19A_2_0.woff2"}
+    ])}}
+    <!-- Century Schoolbook Regular-->
+    {{fontLoader( fonts =[
+      {fileName: "3AC19A_3_0.woff2"}
+    ])}}
+
+    {# <!-- Century Schoolbook Bold -->
+    {{fontLoader( fonts =[
+      {fileName: "3AC19A_0_0.eot"},
+      {fileName: "3AC19A_0_0.ttf"},
+      {fileName: "3AC19A_0_0.woff"},
+      {fileName: "3AC19A_0_0.woff2"}
+    ])}}
+    <!-- Century Schoolbook Bold Italic-->
+    {{fontLoader( fonts =[
+      {fileName: "3AC19A_1_0.eot"},
+      {fileName: "3AC19A_1_0.ttf"},
+      {fileName: "3AC19A_1_0.woff"},
+      {fileName: "3AC19A_1_0.woff2"}
+    ])}}
+    <!-- Century Schoolbook Italic-->
+    {{fontLoader( fonts =[
+      {fileName: "3AC19A_2_0.eot"},
+      {fileName: "3AC19A_2_0.ttf"},
+      {fileName: "3AC19A_2_0.woff"},
+      {fileName: "3AC19A_2_0.woff2"}
+    ])}}
+    <!-- Century Schoolbook Regular-->
+    {{fontLoader( fonts =[
+      {fileName: "3AC19A_3_0.eot"},
+      {fileName: "3AC19A_3_0.ttf"},
+      {fileName: "3AC19A_3_0.woff"},
+      {fileName: "3AC19A_3_0.woff2"}
+    ])}} #}
     <style>
       {% include "main.css" %}
     </style>
