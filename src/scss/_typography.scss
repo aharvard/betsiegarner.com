@@ -7,6 +7,10 @@ h6 {
     @include text-heading-2;
 }
 
+h2 {
+    @include text-display-2;
+}
+
 p {
     white-space: pre-wrap;
     line-height: 1.75;
