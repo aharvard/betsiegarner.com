@@ -32,6 +32,10 @@
     }
 }
 
+.text-display-2 {
+    @include text-display-2;
+}
+
 @mixin text-heading-1 {
     font-family: $font-family-bold;
     text-transform: uppercase;

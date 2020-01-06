@@ -12,14 +12,14 @@ p {
     line-height: 1.75;
 
     & + & {
-        margin-top: 2em;
+        margin-top: 1.5em;
     }
 }
 
 p + {
     h2,
     h3 {
-        margin-top: 1em;
+        margin-top: 5rem;
     }
 }
 
@@ -29,7 +29,7 @@ main {
     h4,
     h5,
     h6 {
-        margin-bottom: 0.5em;
+        margin-bottom: 2rem;
     }
 }
 
@@ -63,4 +63,6 @@ cite,
 .page-blurb {
     @include text-body-1;
     max-width: 70ch;
+    line-height: 1.5;
+    margin-bottom: 5rem;
 }

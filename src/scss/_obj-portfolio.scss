@@ -10,8 +10,8 @@
 .portfolio-intro {
     border-bottom: $border;
     border-top: $border;
-    padding: 5rem 0;
-    margin: 2rem 0 5rem;
+    padding: 3rem 0 3rem;
+    margin: 2rem 0 3rem;
 }
 
 .portfolio-section {
@@ -105,4 +105,43 @@
 }
 
 .section-anchor-list__link {
+}
+
+.problem-solution__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.problem-solution__block {
+    border: $border;
+    padding: 1rem;
+    position: relative;
+    > * + * {
+        margin-top: 1rem;
+    }
+
+    & + &::before {
+        content: ">";
+        position: absolute;
+        top: calc(50% - 0.5rem);
+        height: 1rem;
+        width: 1rem;
+        left: -1.5rem;
+        font-size: 0.75rem;
+        font-family: $font-family-bold;
+        color: $dark-gray;
+    }
+}
+
+.problem-solution__label {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.5rem;
+    font-family: $font-family-bold;
+}
+
+.problem-solution__title {
+    line-height: 1.25;
+    font-size: 1rem;
 }

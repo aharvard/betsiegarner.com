@@ -36,3 +36,9 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
 }
+
+hr {
+    border: none;
+    border-bottom: $border;
+    margin: 2rem 0;
+}

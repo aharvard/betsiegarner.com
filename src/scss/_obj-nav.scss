@@ -46,6 +46,7 @@
     .nav__link--active {
         color: $black;
         background: white;
+        box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.015);
         &:hover,
         &:focus {
             background: white;
